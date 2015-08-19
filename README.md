@@ -6,14 +6,21 @@
 ## Planned formats, example
 
 First, a mapping from R package `SystemRequirements` fields
-to canonical software libraries.
+to canonical software library names:
 
 ```json
 {
-    "igraph": [
-		"gmp",
-		"libxml2"
-	]
+    "libgmp": [
+    	"gmp",
+    	"GMP (GNU MP bignum library)",
+    	"GMP (GNU MP bignum library from http://gmplib.org/)"
+    ],
+    "libxml2": [
+    	"libxml2"
+    ],
+    "gnumake": [
+    	"GNU make"
+    ]
 }		
 ```
 

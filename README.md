@@ -6,7 +6,9 @@
 ## Planned formats, example
 
 First, a mapping from R package `SystemRequirements` fields
-to canonical software library names:
+to canonical software library names. For each canonical name
+we list all names that are used to refer to it. So we store
+the reverse mapping, actually.
 
 ```json
 {

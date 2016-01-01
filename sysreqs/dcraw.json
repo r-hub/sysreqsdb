@@ -1,0 +1,9 @@
+{
+  "dcraw": {
+    "sysreqs": "/dcraw/i",
+    "platforms": {
+      "DEB": "dcraw",
+      "OSX/brew": "dcraw"
+    }
+  }
+}

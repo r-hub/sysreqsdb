@@ -1,0 +1,12 @@
+{
+  "libgsl": {
+    "sysreqs": "/Gnu Scientific Library/i",
+    "platforms": {
+      "DEB": {
+        "runtime": "libgsl0ldbl",
+        "buildtime": "libgsl0-dev"
+      },
+      "OSX/brew": "gsl"
+    }
+  }
+}

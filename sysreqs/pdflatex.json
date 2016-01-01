@@ -1,0 +1,9 @@
+{
+  "pdflatex": {
+    "sysreqs": "/(PDF)LaTeX/i",
+    "platforms": {
+      "DEB": "texlive-latex-base",
+      "OSX/brew": null,
+    }
+  }
+}

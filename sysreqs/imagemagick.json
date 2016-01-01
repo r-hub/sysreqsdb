@@ -1,0 +1,9 @@
+{
+  "imagemagick": {
+    "sysreqs": "/Image[ ]?Magick/i",
+    "platforms": {
+      "DEB": "imagemagick",
+      "OSX/brew": "imagemagick"
+    }
+  }
+}

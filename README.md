@@ -46,7 +46,7 @@ in their `SystemRequirements` fields.
 ```json
 {
   "libxml2": {
-    "sysreqs": ["/libxml2.*/"],
+    "sysreqs": "/libxml2/",
     "platforms": {
       "DEB": {
         "runtime": "libxml2",

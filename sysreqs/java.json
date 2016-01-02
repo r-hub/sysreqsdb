@@ -1,0 +1,9 @@
+{
+  "java": {
+    "sysreqs": "Java",
+    "platforms": {
+      "DEB": "openjdk-7-jre-headless",
+      "OSX/brew": null,
+    }
+  }
+}

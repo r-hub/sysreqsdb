@@ -1,0 +1,9 @@
+{
+  "gnumake": {
+    "sysreqs": "GNU make",
+    "platforms": {
+      "DEB": "make",
+      "OSX/brew": null
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "perl": {
+    "sysreqs": "Perl (>=5)",
+    "platforms": {
+      "DEB": "perl",
+      "OSX/brew": null
+    }
+  }
+}

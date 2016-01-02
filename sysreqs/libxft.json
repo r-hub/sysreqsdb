@@ -1,0 +1,11 @@
+{
+  "libxft": {
+    "sysreqs": "Xft",
+    "platforms": {
+      "DEB": {
+        "runtime": "libxft2",
+        "buildtime": "libxft-dev"
+      }
+    }
+  }
+}

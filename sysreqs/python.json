@@ -1,0 +1,9 @@
+{
+  "python-2.7": {
+    "sysreqs": ["python (>= 2.7)", "python (>= 2.4)", "Python (>=2.76)"],
+    "platforms": {
+      "DEB": "python-minimal",
+      "OSX/brew": null
+    }
+  }
+}

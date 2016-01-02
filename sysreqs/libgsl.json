@@ -1,6 +1,6 @@
 {
   "libgsl": {
-    "sysreqs": "/Gnu Scientific Library/i",
+    "sysreqs": ["/Gnu Scientific Library/i", "/\bgsl\b/"],
     "platforms": {
       "DEB": {
         "runtime": "libgsl0ldbl",

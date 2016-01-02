@@ -1,0 +1,12 @@
+{
+  "cairo": {
+    "sysreqs": "cairo",
+    "platforms": {
+      "DEB": {
+        "runtime": "libcairo2",
+        "buildtime": "libcairo2-dev"
+      },
+      "OSX/brew": "cairo"
+    }
+  }
+}

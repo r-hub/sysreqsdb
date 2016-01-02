@@ -1,0 +1,8 @@
+{
+  "tktable": {
+    "sysreqs": ["Tktable", "tktable"],
+    "platforms": {
+      "DEB": "tk-table"
+    }
+  }
+}

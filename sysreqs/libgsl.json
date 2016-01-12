@@ -16,7 +16,7 @@
         },
         {
           "distribution": "Debian",
-          "releases": ["squeeze", "wheezy", "jessie", "stretch", "sid"],
+          "releases": ["squeeze", "wheezy", "jessie"],
           "runtime": "libgsl0ldbl",
           "buildtime": "libgsl0-dev"
         },

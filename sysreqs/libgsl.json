@@ -2,10 +2,30 @@
   "libgsl": {
     "sysreqs": ["/Gnu Scientific Library/i", "/\bgsl\b/"],
     "platforms": {
-      "DEB": {
-        "runtime": "libgsl0ldbl",
-        "buildtime": "libgsl0-dev"
-      },
+      "DEB": [
+        {
+          "distribution": "Ubuntu",
+          "releases": ["precise", "trusty", "vivid", "wily"],
+          "runtime": "libgsl0ldbl",
+          "buildtime": "libgsl0-dev"
+        },
+        {
+          "distribution": "Ubuntu",
+          "runtime": "libgsl2",
+          "buildtime": "libgsl-dev"
+        },
+        {
+          "distribution": "Debian",
+          "releases": ["squeeze", "wheezy", "jessie", "stretch", "sid"],
+          "runtime": "libgsl0ldbl",
+          "buildtime": "libgsl0-dev"
+        },
+        {
+          "distribution": "Debian",
+          "runtime": "libgsl2",
+          "buildtime": "libgsl-dev"
+        }
+      ],
       "OSX/brew": "gsl"
     }
   }

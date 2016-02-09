@@ -26,7 +26,11 @@
           "buildtime": "libgsl-dev"
         }
       ],
-      "OSX/brew": "gsl"
+      "OSX/brew": "gsl",
+      "RPM": {
+        "runtime": "gsl",
+        "buildtime": "gsl-devel"
+      }
     }
   }
 }

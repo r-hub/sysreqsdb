@@ -3,7 +3,8 @@
     "sysreqs": "libcurl",
     "platforms": {
       "DEB": "libcurl4-openssl-dev",
-      "OSX/brew": null
+      "OSX/brew": null,
+      "RPM": "libcurl-devel"
     }
   }
 }

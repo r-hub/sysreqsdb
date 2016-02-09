@@ -3,7 +3,8 @@
     "sysreqs": "/bwidget/i",
     "platforms": {
       "DEB": "bwidget",
-      "OSX/brew": "TODO"
+      "OSX/brew": "TODO",
+      "RPM": "bwidget"
     }
   }
 }

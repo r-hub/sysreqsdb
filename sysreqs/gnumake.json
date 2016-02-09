@@ -3,7 +3,8 @@
     "sysreqs": "GNU make",
     "platforms": {
       "DEB": "make",
-      "OSX/brew": null
+      "OSX/brew": null,
+      "RPM": "make"
     }
   }
 }

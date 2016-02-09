@@ -3,7 +3,8 @@
     "sysreqs": "/ggobi/",
     "platforms": {
       "DEB": "ggobi",
-      "OSX/brew": "ggobi"
+      "OSX/brew": "ggobi",
+      "RPM": "ggobi"
     }
   }
 }

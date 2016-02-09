@@ -2,7 +2,8 @@
   "tktable": {
     "sysreqs": ["Tktable", "tktable"],
     "platforms": {
-      "DEB": "tk-table"
+      "DEB": "tk-table",
+      "RPM": "tktable"
     }
   }
 }

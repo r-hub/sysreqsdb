@@ -5,7 +5,8 @@
       "DEB": {
         "runtime": "libfftw3-3",
         "buildtime": "libfftw3-dev"
-      }
+      },
+      "RPM": "fftw-devel"
     }
   }
 }

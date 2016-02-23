@@ -1,5 +1,5 @@
 {
-    "os-string": "linux-x86_64-debian-gcc",
+    "id": "linux-x86_64-debian-gcc",
     "name": "DEB",
     "distribution": "Debian",
     "release": "stretch"

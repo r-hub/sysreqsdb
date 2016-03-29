@@ -1,0 +1,10 @@
+{
+  "openssl": {
+    "sysreqs": "OpenSSL",
+    "platforms": {
+      "DEB": "libssl-dev",
+      "OSX/brew": null,
+      "RPM": "openssl-devel"
+    }
+  }
+}

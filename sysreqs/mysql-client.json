@@ -1,6 +1,9 @@
 {
   "mysql-client": {
-    "sysreqs": "/MySQL.MariaDB client headers/",
+    "sysreqs": [
+      "/MySQL.MariaDB client headers/",
+      "libmariadb-client-dev"
+    ],
     "platforms": {
       "DEB": [
         {

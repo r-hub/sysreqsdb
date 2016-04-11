@@ -1,0 +1,26 @@
+{
+  "mysql-client": {
+    "sysreqs": "/MySQL.MariaDB client headers/",
+    "platforms": {
+      "DEB": [
+        {
+          "distribution": "Ubuntu",
+          "releases": ["precise", "trusty"],
+          "runtime": "libmysqlclient18",
+          "buildtime": "libmysqlclient-dev"
+        },
+        {
+          "distribution": "Debian",
+          "releases": ["squeeze", "wheezy"],
+          "runtime": "libmysqlclient18",
+          "buildtime": "libmysqlclient-dev"
+        },
+        {
+          "runtime": "libmariadb-client-lgpl-dev",
+          "buildtime": "libmariadb2"
+        }
+      ],
+      "OSX/brew": "mysql-connector-c"
+    }
+  }
+}

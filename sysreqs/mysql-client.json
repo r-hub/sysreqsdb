@@ -19,8 +19,8 @@
           "buildtime": "libmysqlclient-dev"
         },
         {
-          "runtime": "libmariadb-client-lgpl-dev",
-          "buildtime": "libmariadb2"
+          "buildtime": "libmariadb-client-lgpl-dev",
+          "runtime": "libmariadb2"
         }
       ],
       "OSX/brew": "mysql-connector-c"

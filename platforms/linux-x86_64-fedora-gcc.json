@@ -1,0 +1,7 @@
+{
+    "id": "linux-x86_64-fedora-gcc",
+    "name": "RPM",
+    "distribution": "Fedora",
+    "release": "22",
+    "install-commands": "dnf install -y ${sysreqs}"
+}

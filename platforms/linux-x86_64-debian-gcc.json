@@ -2,5 +2,6 @@
     "id": "linux-x86_64-debian-gcc",
     "name": "DEB",
     "distribution": "Debian",
-    "release": "stretch"
+    "release": "stretch",
+    "install-commands": "apt-get update && apt-get install -y ${sysreqs}"
 }

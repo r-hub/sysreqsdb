@@ -1,0 +1,10 @@
+language: node_js
+
+sudo: false
+
+install:
+  - npm install
+
+script:
+  # JSON Lint:
+  - grunt

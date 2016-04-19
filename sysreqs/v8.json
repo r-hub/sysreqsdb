@@ -1,6 +1,6 @@
 {
   "v8": {
-    "sysreqs": "/^V8:/",
+    "sysreqs": "/\\bV8:/",
     "platforms": {
       "DEB": "libv8-dev",
       "OSX/brew": "v8",

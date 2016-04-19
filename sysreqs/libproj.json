@@ -1,0 +1,10 @@
+{
+  "libproj": {
+    "sysreqs": "PROJ.4",
+    "platforms": {
+      "DEB": "libproj-dev",
+      "OSX/brew": "proj",
+      "RPM": "proj-devel"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "id": "linux-x86_64-ubuntu-gcc",
+    "name": "DEB",
+    "distribution": "Ubuntu",
+    "release": "xenial",
+    "install-commands": "apt-get update && apt-get install -y ${sysreqs}"
+}

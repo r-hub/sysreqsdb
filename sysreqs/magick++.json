@@ -1,0 +1,10 @@
+{
+  "magick++": {
+    "sysreqs": "Magick++",
+    "platforms": {
+      "DEB": "libmagick++-dev",
+      "OSX/brew": "imagemagick",
+      "RPM": "ImageMagick-c++-devel"
+    }
+  }
+}

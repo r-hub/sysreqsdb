@@ -1,0 +1,7 @@
+{
+    "id": "linux-x86_64-centos6-epel",
+    "name": "RPM",
+    "distribution": "CentOS",
+    "release": "6",
+    "install-commands": "yum install -y ${sysreqs}"
+}

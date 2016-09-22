@@ -3,7 +3,7 @@
     "sysreqs": "protobuf-compiler",
     "platforms": {
       "DEB": "protobuf-compiler",
-      "OSX/brew": protobuf,
+      "OSX/brew": "protobuf",
       "RPM": "protobuf-compiler"
     }
   }

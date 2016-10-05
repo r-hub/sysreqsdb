@@ -1,0 +1,10 @@
+{
+  "gpgme": {
+    "sysreqs": "/gpgme/i",
+    "platforms": {
+      "DEB": "libgpgme11-dev",
+      "OSX/brew": "gpgme",
+      "RPM": "gpgme-devel"
+    }
+  }
+}

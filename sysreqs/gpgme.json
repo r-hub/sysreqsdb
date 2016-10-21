@@ -2,9 +2,9 @@
   "gpgme": {
     "sysreqs": "/gpgme/i",
     "platforms": {
-      "DEB": "libgpgme11-dev",
+      "DEB": "libgpgme11-dev haveged",
       "OSX/brew": "gpgme",
-      "RPM": "gpgme-devel"
+      "RPM": "gpgme-devel haveged"
     }
   }
 }

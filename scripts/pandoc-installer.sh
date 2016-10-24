@@ -1,7 +1,7 @@
 #! /bin/bash
 
 URL="https://files.r-hub.io/pandoc/pandoc-latest"
-TARGET="$HOME/bin"
+TARGET="/usr/local/bin"
 mkdir -p $TARGET
 
 # Download and install Pandoc binaries, works on Linux and OSX, for now

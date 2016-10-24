@@ -28,6 +28,11 @@ elif uname > /dev/null && [ $(uname) == 'Linux' ] ;then
 	arch=$(uname -p)
     fi
 
+    # Some Docker images report unknown, try to use 64 bit then
+    if [ "$arch" == "unknown" ]; then
+	arch="x86_64"
+    fi
+
     PANDOC="${URL}/linux/${distro}/${arch}/pandoc"
     PANDOC_CITEPROC="${URL}/linux/${distro}/${arch}/pandoc-citeproc"
 else

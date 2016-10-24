@@ -7,23 +7,23 @@ mkdir -p $TARGET
 # Download and install Pandoc binaries, works on Linux and OSX, for now
 
 if uname > /dev/null && [ $(uname) == 'Darwin' ]; then
-    echo "macOS detected"
+    >&2 echo "macOS detected"
     type="OSX"
     PANDOC="${URL}/mac/pandoc"
     PANDOC_CITEPROC="${URL}/mac/pandoc-citeproc"
 
 elif uname > /dev/null && [ $(uname) == 'Linux' ] ;then
-    echo "Linux detected"
+    >&2 echo "Linux detected"
     if [ -f /etc/debian_version ]; then
-	echo "DEB distro detected"
+	>&2 echo "DEB distro detected"
 	distro=debian
 	arch=$(uname -p)
     elif [ -f /etc/redhat-release ]; then
-	echo "RPM distro detected"
+	>&2 echo "RPM distro detected"
 	distro=rpm
 	arch=$(uname -p)
     else
-	echo "Unknown distro, try DEB"
+	>&2 echo "Unknown distro, try DEB"
 	distro=debian
 	arch=$(uname -p)
     fi
@@ -31,7 +31,7 @@ elif uname > /dev/null && [ $(uname) == 'Linux' ] ;then
     PANDOC="${URL}/linux/${distro}/${arch}/pandoc"
     PANDOC_CITEPROC="${URL}/linux/${distro}/${arch}/pandoc-citeproc"
 else
-    echo "Unknown OS type."
+    >&2 echo "Unknown OS type."
     exit 1
 fi
 

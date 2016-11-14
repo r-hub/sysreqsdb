@@ -1,6 +1,6 @@
 {
     "gtkplus": {
-	"sysreqs": "/\\bGTK\\+\\b/",
+	"sysreqs": "/\\bGTK\\+/",
 	"platforms": {
 	    "DEB": "libgtk2.0-dev",
 	    "OSX/brew": "gtk+",

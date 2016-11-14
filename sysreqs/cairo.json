@@ -1,6 +1,6 @@
 {
   "cairo": {
-    "sysreqs": "cairo",
+    "sysreqs": ["cairo", "Cairo"],
     "platforms": {
       "DEB": {
         "runtime": "libcairo2",

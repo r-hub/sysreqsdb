@@ -1,10 +1,10 @@
 {
   "libproj": {
-    "sysreqs": "PROJ.4",
+    "sysreqs": ["PROJ.4", "proj.maptools.org"],
     "platforms": {
       "DEB": "libproj-dev",
       "OSX/brew": "proj",
-      "RPM": "proj-devel"
+      "RPM": "proj-devel proj-epsg proj-nad"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "gdal": {
-    "sysreqs": "GDAL binaries",
+    "sysreqs": "/\\bGDAL\\b/",
     "platforms": {
       "DEB": "gdal-bin",
       "OSX/brew": "gdal",

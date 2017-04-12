@@ -3,7 +3,7 @@
         "sysreqs": "hiredis",
         "platforms": {
             "DEB": "libhiredis-dev",
-            "OSX/brew": hiredis,
+            "OSX/brew": "hiredis",
             "RPM": "libhiredis-devel"
         }
     }

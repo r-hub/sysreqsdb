@@ -1,0 +1,9 @@
+{
+  "libmpfr": {
+    "sysreqs": "/\\bmpfr\\b/",
+    "platforms": {
+      "DEB": "libmpfr-dev",
+      "OSX/brew": "mpfr"
+    }
+  }
+}

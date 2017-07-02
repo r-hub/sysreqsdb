@@ -1,6 +1,6 @@
 {
   "openmpi": {
-    "sysreqs": "OpenMPI or MPICH2",
+    "sysreqs": ["OpenMPI or MPICH2", "OpenMPI"],
     "platforms": {
       "DEB": {
         "runtime": "libopenmpi1.6",

@@ -4,7 +4,14 @@
     "platforms": {
       "DEB": "cmake",
       "RPM": "cmake",
-      "OSX/brew": "cmake"
-    }
+      "OSX/brew": "cmake",
+      "Windows": {
+        "32bit": [
+          "https://cmake.org/files/v3.9/cmake-3.9.0-win32-x86.zip"
+        ],
+        "64bit": [
+          "https://cmake.org/files/v3.9/cmake-3.9.0-win64-x64.zip"
+        ]
+      }
   }
 }

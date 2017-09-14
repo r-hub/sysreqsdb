@@ -1,6 +1,6 @@
 {
-  "cmake": {
-    "sysreqs": "cmake",
+  "itk": {
+    "sysreqs": "itk",
     "platforms": {
       "DEB": "insighttoolkit4-python libinsighttoolkit4-dev",
       "RPM": "InsightToolkit-devel InsightToolkit-vtk-devel",

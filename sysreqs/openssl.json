@@ -3,7 +3,7 @@
     "sysreqs": "OpenSSL",
     "platforms": {
       "DEB": "libssl-dev",
-      "OSX/brew": null,
+      "OSX/brew": "openssl@1.1",
       "RPM": "openssl-devel"
     }
   }

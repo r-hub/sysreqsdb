@@ -23,7 +23,7 @@
           "runtime": "libmariadb2"
         }
       ],
-      "OSX/brew": "mysql-connector-c"
+      "OSX/brew": "mariadb-connector-c"
     }
   }
 }

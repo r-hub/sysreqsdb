@@ -3,7 +3,7 @@
     "sysreqs": "/\\bV8\\b/",
     "platforms": {
       "DEB": "libv8-3.14-dev",
-      "OSX/brew": "homebrew/versions/v8-315",
+      "OSX/brew": "v8@3.15",
       "RPM": "v8-314-devel"
     }
   }

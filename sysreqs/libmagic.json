@@ -1,0 +1,10 @@
+{
+  "libmagic": {
+    "sysreqs": "libmagic",
+    "platforms": {
+       "DEB": "libmagic-dev",
+       "OSX/brew": "libmagic",
+       "RPM": "file-devel"
+    }
+  }
+}

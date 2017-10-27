@@ -1,0 +1,10 @@
+{
+  "monetdb": {
+    "sysreqs": "monetdb",
+    "platforms": {
+       "DEB": "monetdb5-sql",
+       "OSX/brew": "monetdb",
+       "RPM": "MonetDB-SQL-server5 MonetDB-client"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "libav": {
+    "sysreqs": "libav",
+    "platforms": {
+       "DEB": "libav-tools",
+       "OSX/brew": "libav",
+       "RPM": null
+    }
+  }
+}

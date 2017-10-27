@@ -1,0 +1,10 @@
+{
+  "mongodb": {
+    "sysreqs": "mongodb",
+    "platforms": {
+       "DEB": "mongodb",
+       "OSX/brew": "mongodb",
+       "RPM": "mongodb-org"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "exiftool": {
+    "sysreqs": "exiftool",
+    "platforms": {
+       "DEB": "libimage-exiftool-perl",
+       "OSX/brew": "exiftool",
+       "RPM": null
+    }
+  }
+}

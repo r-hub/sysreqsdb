@@ -1,0 +1,10 @@
+{
+  "libsndfile": {
+    "sysreqs": "libsndfile",
+    "platforms": {
+       "DEB": "libsndfile1-dev",
+       "OSX/brew": "libsndfile",
+       "RPM": "libsndfile-devel"
+    }
+  }
+}

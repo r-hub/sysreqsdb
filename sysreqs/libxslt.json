@@ -1,0 +1,10 @@
+{
+  "libxslt": {
+    "sysreqs": "libxslt",
+    "platforms": {
+       "DEB": "libxslt1-dev",
+       "OSX/brew": "libxslt",
+       "RPM": "libxslt-devel"
+    }
+  }
+}

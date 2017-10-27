@@ -1,0 +1,10 @@
+{
+  "libbi": {
+    "sysreqs": "libbi",
+    "platforms": {
+       "DEB": null,
+       "OSX/brew": "libbi",
+       "RPM": null
+    }
+  }
+}

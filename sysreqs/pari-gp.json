@@ -1,0 +1,10 @@
+{
+  "pari-gp": {
+    "sysreqs": "pari-gp",
+    "platforms": {
+       "DEB": "pari-gp",
+       "OSX/brew": "pari",
+       "RPM": "pari-gp"
+    }
+  }
+}

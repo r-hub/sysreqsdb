@@ -3,7 +3,7 @@
     "sysreqs": "/Image[ ]?Magick/i",
     "platforms": {
       "DEB": "imagemagick",
-      "OSX/brew": "imagemagick",
+      "OSX/brew": "imagemagick@6",
       "RPM": "ImageMagick"
     }
   }

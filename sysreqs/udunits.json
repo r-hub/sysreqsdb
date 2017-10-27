@@ -1,0 +1,10 @@
+{
+  "udunits": {
+    "sysreqs": "udunits",
+    "platforms": {
+       "DEB": "udunits",
+       "OSX/brew": "udunits",
+       "RPM": "udunits"
+    }
+  }
+}

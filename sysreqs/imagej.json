@@ -1,0 +1,10 @@
+{
+  "imagej": {
+    "sysreqs": "imagej",
+    "platforms": {
+       "DEB": "imagej",
+       "OSX/brew": "imagej",
+       "RPM": "imagej"
+    }
+  }
+}

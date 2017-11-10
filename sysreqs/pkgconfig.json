@@ -1,0 +1,10 @@
+{
+  "pkgconfig": {
+    "sysreqs": "pkg(-|)config",
+    "platforms": {
+      "DEB": "pkg-config",
+      "OSX/brew": "pkg-config",
+      "RPM": "pkgconfig"
+    }
+  }
+}

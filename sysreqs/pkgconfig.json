@@ -1,6 +1,6 @@
 {
   "pkgconfig": {
-    "sysreqs": "pkg(-|)config",
+    "sysreqs": "/pkg(:-|)config/",
     "platforms": {
       "DEB": "pkg-config",
       "OSX/brew": "pkg-config",

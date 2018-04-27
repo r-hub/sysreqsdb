@@ -1,0 +1,8 @@
+{
+  "saga": {
+    "sysreqs": "/SAGA GIS/",
+    "platforms": {
+      "DEB": "saga"
+    }
+  }
+}

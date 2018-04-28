@@ -1,0 +1,11 @@
+{
+  "protobuf3-compiler": {
+    "sysreqs": ["protobuf3-compiler"],
+    "platforms": {
+      "DEB": {"script": "protobuf-installer.sh"},
+      "RPM": {"script": "protobuf-installer.sh"},
+      "OSX/brew": "protobuf"
+    }
+  }  
+}
+

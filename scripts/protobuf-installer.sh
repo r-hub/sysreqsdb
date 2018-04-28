@@ -5,5 +5,5 @@ unzip protobuf-cpp-3.5.1.zip -d proto
 cd proto/protobuf-3.5.1/
 ./configure
 make
-sudo make install
-sudo ldconfig
+make install
+ldconfig

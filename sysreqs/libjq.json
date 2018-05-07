@@ -1,10 +1,10 @@
 
-+{
-+  "libjq": {
-+    "sysreqs": "libjq",
-+    "platforms": {
-+      "DEB": "libjq-dev",
-+      "RPM": "jq-devel"
-+    }
-+  }
-+}
+{
+  "libjq": {
+    "sysreqs": "libjq",
+    "platforms": {
+      "DEB": "libjq-dev",
+      "RPM": "jq-devel"
+    }
+  }
+}

@@ -4,7 +4,8 @@
     "sysreqs": "libjq",
     "platforms": {
       "DEB": "libjq-dev",
-      "RPM": "jq-devel"
+      "RPM": "jq-devel",
+      "OSX/brew": "jq"
     }
   }
 }

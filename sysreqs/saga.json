@@ -2,7 +2,8 @@
   "saga": {
     "sysreqs": "/SAGA GIS/",
     "platforms": {
-      "DEB": "saga"
+      "DEB": "saga",
+      "OSX/brew": "saga-gis-lts"
     }
   }
 }

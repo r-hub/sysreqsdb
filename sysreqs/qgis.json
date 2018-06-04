@@ -1,0 +1,9 @@
+{
+  "qgis": {
+    "sysreqs": "/QGIS/",
+    "platforms": {
+      "DEB": "qgis",
+      "OSX/brew": "qgis2"
+    }
+  }
+}

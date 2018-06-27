@@ -63,13 +63,13 @@ in their `SystemRequirements` fields.
 
 Some notes:
 * The `sysreqs` field can be a list, and its entries can be regular
-  expressions (when starting and ending with a forward slash).
+  expressions (when starting and ending with a forward slash). [Example of a list `sysreqs` field](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cairo.json#L3), [example of a `sysreqs` field with a regular expression](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/imagemagick.json#L3).
 * Not all platforms have the same information, For `DEB` based Linux
   flavours (Debian, Ubuntu, etc.) packages that can be installed via the
-  host package manager are listed. For Windows, typically URLs that have
-  to be downloaded and installed.
+  host package manager are listed: [`DEB` line example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L5). For Windows, typically URLs that have
+  to be downloaded and installed: [Windows lines example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L8).
 * `null` for `OSX/brew` means that nothing is needed, the system includes
-  the requirement(s) by default.
+  the requirement(s) by default. [Example](https://github.com/r-hub/sysreqsdb/blob/92ab711e2ddd5aa8ebb93f6a1fdc1d2b9012bc75/sysreqs/libbi.json#L5)
 
 ## Database access
 

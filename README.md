@@ -77,7 +77,15 @@ See API docs at <https://sysreqs.r-hub.io/>
 
 ## Contributing
 
+Your contributions are welcome! More details below.
+
 ### Adding or completing entries
+
+Please read about [the data format](#database-format) first. Entries should be added or improved via pull requests.
+
+* If a package (of yours or not) has a dependency that's not listed here yet, open a pull request to add it. You don't need to have it mapped to all platforms yet. [Example of such a PR](https://github.com/r-hub/sysreqsdb/pull/46).
+
+* You can also make a pull request to add a mapping to a platform. [Example of such a PR](https://github.com/r-hub/sysreqsdb/pull/47).
 
 ### Reporting your use case
 

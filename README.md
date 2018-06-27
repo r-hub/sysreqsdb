@@ -22,7 +22,7 @@ In this README learn
 * [what's the database format](#database-format)
 * [how to contribute](#contributing)
 * [how to access the data](#database-access)
-* [where the `sysreqs` project is used](#use-cases)
+* [where the `sysreqs` project is used](#use-cases-of-the-database)
 
 
 ## Supported platforms
@@ -95,6 +95,8 @@ See API docs at <https://sysreqs.r-hub.io/>
 ### Adding or completing entries
 
 ### Reporting your use case
+
+* If you maintain a public platform/tool using sysreqsdb, make a PR to this repo updating the [section below](#use-cases-of-the-database). Please put your tool at the very end of the list.
 
 ## Use cases of the database
 

@@ -16,9 +16,14 @@ with API, that can be used to quickly find out what Debian, Ubuntu,
 RedHat, brew, etc. packages or other external software needs to be installed
 to run or build R packages.
 
-## Database access
+In this README learn 
 
-TODO
+* [which platforms are supported](#supported-platforms)
+* [what's the database format](#database-format)
+* [how to contribute](#contributing)
+* [how to access the data](#database-access)
+* [where the `sysreqs` project is used](#use-cases)
+
 
 ## Supported platforms
 
@@ -81,13 +86,21 @@ Some notes:
 * `null` for `OSX/brew` means that nothing is needed, the system includes
   the requirement(s) by default.
 
-## API
+## Database access
 
-TODO
+See API docs at <https://sysreqs.r-hub.io/>
 
 ## Contributing
 
-TODO
+### Adding or completing entries
+
+### Reporting your use case
+
+## Use cases of the database
+
+* [R-hub](https://builder.r-hub.io/)
+
+* The [`codemetar` package](https://github.com/ropensci/codemetar), R package for the [CodeMeta project](https://codemeta.github.io/), uses the sysreqs API to parse the SystemRequirements field
 
 ## License
 

@@ -69,7 +69,7 @@ Some notes:
   host package manager are listed: [`DEB` line example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L5). For Windows, typically URLs that have
   to be downloaded and installed: [Windows lines example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L8).
 * `null` for `OSX/brew` means that nothing is needed, the system includes
-  the requirement(s) by default. [Example](https://github.com/r-hub/sysreqsdb/blob/92ab711e2ddd5aa8ebb93f6a1fdc1d2b9012bc75/sysreqs/libbi.json#L5)
+  the requirement(s) by default. [Example](https://github.com/r-hub/sysreqsdb/blob/92ab711e2ddd5aa8ebb93f6a1fdc1d2b9012bc75/sysreqs/libbi.json#L5).
 
 ## Database access
 
@@ -89,7 +89,7 @@ Please read about [the data format](#database-format) first. Entries should be a
 
 ### Reporting your use case
 
-* If you maintain a public platform/tool using sysreqsdb, make a PR to this repo updating the [section below](#use-cases-of-the-database). Please put your tool at the very end of the list.
+If you maintain a public platform/tool using sysreqsdb, make a PR to this repo updating the [section below](#use-cases-of-the-database). Please put your tool at the very end of the list.
 
 ## Use cases of the database
 

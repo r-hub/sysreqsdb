@@ -45,7 +45,7 @@ or URLs.
 Here is an example to make this clear. Many R packages require the libxml2
 library. For installing these packages from source, the libxml2 development
 headers are also needed. Various R packages refer to libxml2 in different
-ways. E.g. `igraph` has simply `libxml2` and `XML` has `libxml2 (>= 2.6.3)`
+ways. E.g. [`igraph`](https://cran.r-project.org/web/packages/igraph/index.html) has simply `libxml2` and [`XML`](https://cran.r-project.org/web/packages/XML/index.html) has `libxml2 (>= 2.6.3)`
 in their `SystemRequirements` fields.
 
 ```json

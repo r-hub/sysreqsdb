@@ -95,7 +95,7 @@ Please read about [the data format](#database-format) first. Entries should be a
 
 * [R-hub](https://builder.r-hub.io/)
 
-* The [`codemetar` package](https://github.com/ropensci/codemetar), R package for the [CodeMeta project](https://codemeta.github.io/), uses the sysreqs API to parse the SystemRequirements field
+* The [`codemetar` package](https://github.com/ropensci/codemetar), R package for the [CodeMeta project](https://codemeta.github.io/), uses the sysreqs API to parse the SystemRequirements field.
 
 ## License
 

@@ -50,27 +50,12 @@ in their `SystemRequirements` fields.
 
 ```json
 {
-  "libxml2": {
-    "sysreqs": "/libxml2/",
+  "libsecret": {
+    "sysreqs": "/\\blibsecret\\b/",
     "platforms": {
-      "DEB": {
-        "runtime": "libxml2",
-        "buildtime": "libxml2-dev"
-      },
-      "OSX/brew": null,
-      "RPM": "libxml2",
-      "Windows": {
-        "32bit": [
-          "ftp://ftp.zlatkovic.com/libxml/zlib-1.2.5.win32.zip",
-          "ftp://ftp.zlatkovic.com/libxml/iconv-1.9.2.win32.zip",
-          "ftp://ftp.zlatkovic.com/libxml/libxml2-2.7.8.win32.zip",
-        ],
-        "64bit": [
-          "ftp://ftp.zlatkovic.com/libxml/64bit/zlib-1.2.8-win32-x86_64.7z",
-          "ftp://ftp.zlatkovic.com/libxml/64bit/iconv-1.14-win32-x86_64.7z",
-          "ftp://ftp.zlatkovic.com/libxml/64bit/libxml2-2.9.3-win32-x86_64.7z"
-        ]
-      }
+      "DEB": "libsecret-1-dev",
+      "OSX/brew": "libsecret",
+      "RPM": "libsecret-devel"
     }
   }
 }

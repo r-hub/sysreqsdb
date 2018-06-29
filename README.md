@@ -16,9 +16,14 @@ with API, that can be used to quickly find out what Debian, Ubuntu,
 RedHat, brew, etc. packages or other external software needs to be installed
 to run or build R packages.
 
-## Database access
+In this README learn 
 
-TODO
+* [which platforms are supported](#supported-platforms)
+* [what's the database format](#database-format)
+* [how to contribute](#contributing)
+* [how to access the data](#database-access)
+* [where the `sysreqs` project is used](#use-cases-of-the-database)
+
 
 ## Supported platforms
 
@@ -40,32 +45,17 @@ or URLs.
 Here is an example to make this clear. Many R packages require the libxml2
 library. For installing these packages from source, the libxml2 development
 headers are also needed. Various R packages refer to libxml2 in different
-ways. E.g. `igraph` has simply `libxml2` and `XML` has `libxml2 (>= 2.6.3)`
+ways. E.g. [`igraph`](https://cran.r-project.org/web/packages/igraph/index.html) has simply `libxml2` and [`XML`](https://cran.r-project.org/web/packages/XML/index.html) has `libxml2 (>= 2.6.3)`
 in their `SystemRequirements` fields.
 
 ```json
 {
   "libxml2": {
-    "sysreqs": "/libxml2/",
+    "sysreqs": "libxml2",
     "platforms": {
-      "DEB": {
-        "runtime": "libxml2",
-        "buildtime": "libxml2-dev"
-      },
-      "OSX/brew": null,
-      "RPM": "libxml2",
-      "Windows": {
-        "32bit": [
-          "ftp://ftp.zlatkovic.com/libxml/zlib-1.2.5.win32.zip",
-          "ftp://ftp.zlatkovic.com/libxml/iconv-1.9.2.win32.zip",
-          "ftp://ftp.zlatkovic.com/libxml/libxml2-2.7.8.win32.zip",
-        ],
-        "64bit": [
-          "ftp://ftp.zlatkovic.com/libxml/64bit/zlib-1.2.8-win32-x86_64.7z",
-          "ftp://ftp.zlatkovic.com/libxml/64bit/iconv-1.14-win32-x86_64.7z",
-          "ftp://ftp.zlatkovic.com/libxml/64bit/libxml2-2.9.3-win32-x86_64.7z"
-        ]
-      }
+       "DEB": "libxml2-dev",
+       "OSX/brew": null,
+       "RPM": "libxml2-devel"
     }
   }
 }
@@ -73,21 +63,39 @@ in their `SystemRequirements` fields.
 
 Some notes:
 * The `sysreqs` field can be a list, and its entries can be regular
-  expressions (when starting and ending with a forward slash).
+  expressions (when starting and ending with a forward slash). [Example of a list `sysreqs` field](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cairo.json#L3), [example of a `sysreqs` field with a regular expression](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/imagemagick.json#L3).
 * Not all platforms have the same information, For `DEB` based Linux
   flavours (Debian, Ubuntu, etc.) packages that can be installed via the
-  host package manager are listed. For Windows, typically URLs that have
-  to be downloaded and installed.
+  host package manager are listed: [`DEB` line example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L5). For Windows, typically URLs that have
+  to be downloaded and installed: [Windows lines example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L8).
 * `null` for `OSX/brew` means that nothing is needed, the system includes
-  the requirement(s) by default.
+  the requirement(s) by default. [Example](https://github.com/r-hub/sysreqsdb/blob/92ab711e2ddd5aa8ebb93f6a1fdc1d2b9012bc75/sysreqs/libbi.json#L5).
 
-## API
+## Database access
 
-TODO
+See API docs at <https://sysreqs.r-hub.io/>
 
 ## Contributing
 
-TODO
+Your contributions are welcome! More details below.
+
+### Adding or completing entries
+
+Please read about [the data format](#database-format) first. Entries should be added or improved via pull requests.
+
+* If a package (of yours or not) has a dependency that's not listed here yet, open a pull request to add it. You don't need to have it mapped to all platforms yet. [Example of such a PR](https://github.com/r-hub/sysreqsdb/pull/46).
+
+* You can also make a pull request to add a mapping to a platform. [Example of such a PR](https://github.com/r-hub/sysreqsdb/pull/47).
+
+### Reporting your use case
+
+If you maintain a public platform/tool using sysreqsdb, make a PR to this repo updating the [section below](#use-cases-of-the-database). Please put your tool at the very end of the list.
+
+## Use cases of the database
+
+* [R-hub](https://builder.r-hub.io/)
+
+* The [`codemetar` package](https://github.com/ropensci/codemetar), R package for the [CodeMeta project](https://codemeta.github.io/), uses the sysreqs API to parse the SystemRequirements field.
 
 ## License
 

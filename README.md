@@ -5,35 +5,37 @@
 
 ## Introduction
 
-Many R packages require external libraries or other external software to
-run. The `SystemRequirements` field in the `DESCRIPTION` file should declare
-these dependencies, as free form text. This makes it somewhat hard to
-create automatic builds of R packages, since it is hard to guess what
-software needs to be installed on the build machine.
+Many R packages require system libraries or other external software to build
+or run. The `SystemRequirements` field in the package `DESCRIPTION` file should
+declare these dependencies, as free form text. This makes it difficult to
+automate building and checking of R packages, since we need to guess which
+software should be installed on the build machine.
 
 The `sysreqs` project formalizes these requirements, and provides a database
-with API, that can be used to quickly find out what Debian, Ubuntu,
-RedHat, brew, etc. packages or other external software needs to be installed
-to run or build R packages.
+with API to quickly find out which Homebrew, Debian, Ubuntu, RHEL/Centos, etc
+packages or other software needs to be available to build and use R packages.
 
-In this README learn 
+In this README:
 
-* [which platforms are supported](#supported-platforms)
-* [what's the database format](#database-format)
+* [supported platforms](#supported-platforms)
+* [the database format](#database-format)
 * [how to contribute](#contributing)
 * [how to access the data](#database-access)
 * [where the `sysreqs` project is used](#use-cases-of-the-database)
 
-
 ## Supported platforms
 
-Planned:
-* Ubuntu Linux (recent releases)
-* Debian Linux (recent releases)
+Distributions using `deb` package format:
+* Ubuntu Linux
+* Debian Linux
+
+Distributions using `rpm` package format:
 * Fedora Linux (recent releases)
 * RedHat and CentOS Linux (recent releases)
-* Mac OS X with the brew package manager
-* Windows
+
+Non-native package formats;
+* HomeBrew package manager on MacOS
+* Pacman/Rtools on Windows (forthcoming)
 
 ## Database format
 
@@ -42,9 +44,9 @@ mappings for a single canonical system requirement. It contains both
 the mappings to `SystemRequirements` fields, and platform dependent packages
 or URLs.
 
-Here is an example to make this clear. Many R packages require the libxml2
-library. For installing these packages from source, the libxml2 development
-headers are also needed. Various R packages refer to libxml2 in different
+Below an example to make this clear. Several R packages require the libxml2
+library. For building these packages from source, the libxml2 development
+headers are needed as well. The R packages refer to libxml2 in different
 ways. E.g. [`igraph`](https://cran.r-project.org/web/packages/igraph/index.html) has simply `libxml2` and [`XML`](https://cran.r-project.org/web/packages/XML/index.html) has `libxml2 (>= 2.6.3)`
 in their `SystemRequirements` fields.
 
@@ -62,8 +64,8 @@ in their `SystemRequirements` fields.
 ```
 
 Some notes:
-* The `sysreqs` field can be a list, and its entries can be regular
-  expressions (when starting and ending with a forward slash). [Example of a list `sysreqs` field](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cairo.json#L3), [example of a `sysreqs` field with a regular expression](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/imagemagick.json#L3).
+* The `sysreqs` field can be a string or array, and its entries can be fixed
+  strings or regular expressions (when starting and ending with a forward slash). [Example of a list `sysreqs` field](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cairo.json#L3), [example of a `sysreqs` field with a regular expression](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/imagemagick.json#L3).
 * Not all platforms have the same information, For `DEB` based Linux
   flavours (Debian, Ubuntu, etc.) packages that can be installed via the
   host package manager are listed: [`DEB` line example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L5). For Windows, typically URLs that have

@@ -50,12 +50,12 @@ in their `SystemRequirements` fields.
 
 ```json
 {
-  "libsecret": {
-    "sysreqs": "/\\blibsecret\\b/",
+  "libxml2": {
+    "sysreqs": "libxml2",
     "platforms": {
-      "DEB": "libsecret-1-dev",
-      "OSX/brew": "libsecret",
-      "RPM": "libsecret-devel"
+       "DEB": "libxml2-dev",
+       "OSX/brew": null,
+       "RPM": "libxml2-devel"
     }
   }
 }

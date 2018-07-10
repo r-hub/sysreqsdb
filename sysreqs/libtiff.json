@@ -2,9 +2,9 @@
   "libtiff": {
     "sysreqs": "/\\blibtiff\\b/",
     "platforms": {
-      "DEB": "libtiff5-dev",
+      "DEB": "libtiff-dev",
       "OSX/brew": "libtiff",
-      "RPM": "libtiff5-dev"
+      "RPM": "libtiff-devel"
     }
   }
 }

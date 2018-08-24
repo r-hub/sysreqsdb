@@ -1,6 +1,6 @@
 {
   "udunits": {
-    "sysreqs": "/\\budunits\\b/",
+    "sysreqs": "/(?:[^-])\\budunits\\b(?![-_.])/",
     "platforms": {
        "DEB": "udunits",
        "OSX/brew": "udunits",

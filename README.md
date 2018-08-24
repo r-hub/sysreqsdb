@@ -65,7 +65,7 @@ in their `SystemRequirements` fields.
 
 Some notes:
 * The `sysreqs` field can be a string or array, and its entries can be fixed
-  strings or regular expressions (when starting and ending with a forward slash). [Example of a list `sysreqs` field](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cairo.json#L3), [example of a `sysreqs` field with a regular expression](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/imagemagick.json#L3).
+  strings or regular expressions (when starting and ending with a forward slash, only [JavaScript RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) are supported. [Example of a list `sysreqs` field](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cairo.json#L3), [example of a `sysreqs` field with a regular expression](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/imagemagick.json#L3).
 * Not all platforms have the same information, For `DEB` based Linux
   flavours (Debian, Ubuntu, etc.) packages that can be installed via the
   host package manager are listed: [`DEB` line example](https://github.com/r-hub/sysreqsdb/blob/9c0acc932a11b1eb9f1600e27ca39a4d7deb0425/sysreqs/cmake.json#L5). For Windows, typically URLs that have

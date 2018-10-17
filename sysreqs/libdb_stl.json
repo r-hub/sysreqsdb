@@ -1,0 +1,16 @@
+{
+  "libdb_stl": {
+    "sysreqs": ["/libdb_stl/"],
+    "platforms": {
+      "DEB": [
+        {
+          "distribution": "Ubuntu",
+          "releases": ["bionic"],
+          "runtime": "libdb5.3-stl-dev",
+          "buildtime": "libdb5.3-stl"
+        },
+      ],
+      "OSX/brew": "berkeley-db",
+    }
+  }
+}

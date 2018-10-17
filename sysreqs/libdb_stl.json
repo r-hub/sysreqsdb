@@ -10,7 +10,7 @@
           "buildtime": "libdb5.3-stl"
         },
       ],
-      "OSX/brew": "berkeley-db",
+      "OSX/brew": "berkeley-db"
     }
   }
 }

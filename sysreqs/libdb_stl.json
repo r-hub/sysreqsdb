@@ -8,7 +8,7 @@
           "releases": ["bionic"],
           "runtime": "libdb5.3-stl-dev",
           "buildtime": "libdb5.3-stl"
-        },
+        }
       ],
       "OSX/brew": "berkeley-db"
     }

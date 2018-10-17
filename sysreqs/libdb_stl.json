@@ -1,0 +1,22 @@
+{
+  "libdb_stl": {
+    "sysreqs": ["/libdb_stl/"],
+    "platforms": {
+      "DEB": [
+        {
+          "distribution": "Ubuntu",
+          "releases": ["bionic", "cosmic", "artful", "xenial", "trusty"],
+          "runtime": "libdb5.3-stl-dev",
+          "buildtime": "libdb5.3-stl"
+        },
+        {
+          "distribution": "Debian",
+          "releases": ["jessie", "stretch", "buster", "sid"],
+          "runtime": "libdb5.3-stl-dev",
+          "buildtime": "libdb5.3-stl"
+        }
+      ],
+      "OSX/brew": "berkeley-db"
+    }
+  }
+}

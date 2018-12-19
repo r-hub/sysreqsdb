@@ -1,0 +1,10 @@
+{
+  "rust": {
+    "sysreqs": ["cargo", "rust", "rustc"],
+    "platforms": {
+      "DEB": "cargo",
+      "RPM": "cargo",
+      "OSX/brew": "rust"      
+    }
+  }
+}

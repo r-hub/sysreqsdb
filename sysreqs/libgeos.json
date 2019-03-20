@@ -1,10 +1,51 @@
 {
-  "libgeos": {
-    "sysreqs": "/\\bGEOS\\b/",
-    "platforms": {
-      "DEB": "libgeos-dev",
-      "OSX/brew": "geos",
-      "RPM": "geos-devel"
-    }
-  }
+    "name": "libgeos",
+    "title": "Geometry engine for Geographic Information Systems",
+    "uri": "https://trac.osgeo.org/geos/",
+
+    "sysreqs": [ "/\\bGEOS\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libgeos-c1" ],
+	  "buildtime-packages": [ "libgeos-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libgeos-c1v5" ],
+	  "buildtime-packages": [ "libgeos-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04"
+	},
+	
+	{ "runtime-packages": [ "libgeos-c1" ],
+	  "buildtime-packages": [ "libgeos-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libgeos-c1v5" ],
+	  "buildtime-packages": [ "libgeos-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "geos" ],
+	  "buildtime-packages": [ "geos-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "geos" ],
+	  "os": "macos",
+	  "distributions" [ "brew" ]
+	}
+    ]
 }

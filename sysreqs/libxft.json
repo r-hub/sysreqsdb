@@ -1,15 +1,22 @@
 {
-  "libxft": {
+    "name": "libxft",
+    "title": "FreeType-based font drawing library for X",
+    "uri": "",
+    
     "sysreqs": "Xft",
-    "platforms": {
-      "DEB": {
-        "runtime": "libxft2",
-        "buildtime": "libxft-dev"
-      },
-      "RPM": {
-        "runtime": "libXft",
-        "buildtime": "libXft-devel"
-      }
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libxft2" ],
+	  "buildtime-packages" [ "libxft2-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "libXft" ],
+	  "buildtime-packages" [ "libXft-devel" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+    ]
 }

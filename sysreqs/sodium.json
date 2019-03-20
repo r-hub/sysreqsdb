@@ -1,10 +1,51 @@
 {
-  "sodium": {
-    "sysreqs": "/\\blibsodium\\b/",
-    "platforms": {
-      "DEB": "libsodium-dev",
-      "OSX/brew": "libsodium",
-      "RPM": "libsodium-devel"
-    }
-  }
+    "name": "sodium",
+    "title": "Network communication, cryptography and signaturing library",
+    "uri": "http://www.libsodium.org/",
+
+    "sysreqs": [  "/\\blibsodium\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libsodium18" ],
+	  "buildtime-packages": [ "libsodium-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libsodium23" ],
+	  "buildtime-packages": [ "libsodium-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+	
+	{ "runtime-packages": [ "libsodium18" ],
+	  "buildtime-packages": [ "libsodium-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libsodium23" ],
+	  "buildtime-packages": [ "libsodium-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "libsodium" ],
+	  "buildtime-packages": [ "libsodium-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libsodium" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

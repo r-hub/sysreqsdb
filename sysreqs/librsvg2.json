@@ -1,10 +1,27 @@
 {
-  "librsvg2": {
-    "sysreqs": "librsvg2",
-    "platforms": {
-      "DEB": "librsvg2-dev",
-      "OSX/brew": "librsvg",
-      "RPM": "librsvg2-devel"
-    }
-  }
+    "name": "librsvg2",
+    "title": "SAX-based renderer library for SVG files",
+    "uri": "https://wiki.gnome.org/Projects/LibRsvg",
+
+    "sysreqs": [ "librsvg2" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "librsvg2-2" ],
+	  "buildtime-packages": [ "librsvg2-dev" ],
+	  "os": "linux",
+	  "distribution": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "librsvg2" ],
+	  "buildtime-packages": [ "librsvg2-devel" ],
+	  "os": "linux",
+	  "distribution": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "librsvg" ],
+	  "os": "macos",
+	  "distribution": [ "brew" ]
+	}
+    ]
 }

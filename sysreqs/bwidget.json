@@ -1,10 +1,18 @@
 {
-  "bwidget": {
-    "sysreqs": "/bwidget/i",
-    "platforms": {
-      "DEB": "bwidget",
-      "OSX/brew": "TODO",
-      "RPM": "bwidget"
-    }
-  }
+    "name": "bwidget",
+    "title": "Extension widgets for Tcl/Tk",
+    "uri": "https://core.tcl.tk/bwidget/home",
+
+    "sysreqs": [ "/bwidget/i" ],
+
+    "dependencies": [
+
+	{ "packages": [ "bwidget" ],
+	  "os": "linux"
+	},
+	
+	{ "packages": [ "bwidget" ],
+	  "os": "windows"
+	}
+    ]
 }

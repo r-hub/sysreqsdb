@@ -1,10 +1,67 @@
 {
-    "hiredis": {
-        "sysreqs": "hiredis",
-        "platforms": {
-            "DEB": "libhiredis-dev",
-            "OSX/brew": "hiredis",
-            "RPM": "libhiredis-devel"
-        }
-    }
+    "name": "hiredis",
+    "title": "Minimalistic C client library for Redis",
+    "uri": "https://github.com/redis/hiredis",
+
+    "sysreqs": "hiredis",
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libhiredis0.10" ],
+	  "buildtime-packages": [ "libhiredis-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libhiredis0.13" ],
+	  "buildtime-packages": [ "libhiredis-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "19.04"
+	},
+
+	{ "runtime-packages": [ "libhiredis0.14" ],
+	  "buildtime-packages": [ "libhiredis-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "19.04"
+	},
+
+	{ "runtime-packages": [ "libhiredis0.10" ],
+	  "buildtime-packages": [ "libhiredis-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+	
+	{ "runtime-packages": [ "libhiredis0.13" ],
+	  "buildtime-packages": [ "libhiredis-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libhiredis0.13" ],
+	  "buildtime-packages": [ "libhiredis-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "libhiredis0" ],
+	  "buildtime-packages": [ "libhiredis-dev" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "hiredis" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

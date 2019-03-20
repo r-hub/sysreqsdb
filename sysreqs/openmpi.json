@@ -1,16 +1,75 @@
 {
-  "openmpi": {
+    "name": "openmpi",
+    "title": "High performance message passing library",
+    "uri": "http://www.open-mpi.org/",
+
     "sysreqs": ["OpenMPI or MPICH2", "OpenMPI"],
-    "platforms": {
-      "DEB": {
-        "runtime": "libopenmpi1.6",
-        "buildtime": "libopenmpi-dev"
-      },
-      "OSX/brew": "openmpi",
-      "RPM": {
-        "runtime": "openmpi",
-        "buildtime": "openmpi-devel"
-      }
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libopenmpi1.6" ],
+	  "buildtime-packages": [ "libopenmpi-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version" "16.04"
+	},
+
+	{ "runtime-packages": [ "libopenmpi1.10" ],
+	  "buildtime-packages": [ "libopenmpi-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version" "18.04"
+	},
+
+	{ "runtime-packages": [ "libopenmpi2" ],
+	  "buildtime-packages": [ "libopenmpi-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04",
+	  "before-version" "18.10"
+	},
+
+	{ "runtime-packages": [ "libopenmpi3" ],
+	  "buildtime-packages": [ "libopenmpi-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.10"
+	},
+
+	{ "runtime-packages": [ "libopenmpi1.6" ],
+	  "buildtime-packages": [ "libopenmpi-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version" "9"
+	},
+
+	{ "runtime-packages": [ "libopenmpi2" ],
+	  "buildtime-packages": [ "libopenmpi-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version" "10"
+	},
+
+	{ "runtime-packages": [ "libopenmpi3" ],
+	  "buildtime-packages": [ "libopenmpi-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "openmpi" ],
+	  "buildtime-packages": [ "openmpi-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "openmpi" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

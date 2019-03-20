@@ -1,10 +1,32 @@
 {
-  "libxml2": {
-    "sysreqs": "libxml2",
-    "platforms": {
-       "DEB": "libxml2-dev",
-       "OSX/brew": null,
-       "RPM": "libxml2-devel"
-    }
-  }
+    "name": "libxml2",
+    "title": "GNOME XML library",
+    "uri": "http://xmlsoft.org/",
+
+    "sysreqs": [ "libxml2" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libxml2" ],
+	  "buildtime-packages": [ "libxml2-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "libxml2" ],
+	  "buildtime-packages": [ "libxml2-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libxml2" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

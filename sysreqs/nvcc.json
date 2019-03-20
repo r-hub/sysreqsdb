@@ -1,8 +1,15 @@
 {
-  "nvcc": {
-    "sysreqs": "nvcc",
-    "platforms": {
-      "DEB": "nvidia-cuda-toolkit"
-    }
-  }
+    "name": "nvcc",
+    "title": "NVIDIA CUDA toolkit",
+    "uri": "https://developer.nvidia.com/cuda-zone",
+
+    "sysreqs": [ "nvcc" ],
+
+    "dependencies": [
+
+	{ "packages": [ "nvidia-cuda-toolkit" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	}
+    ]
 }

@@ -1,10 +1,60 @@
 {
-  "libgdal": {
-    "sysreqs": "source: GDAL",
-    "platforms": {
-      "DEB": "libgdal-dev",
-      "OSX/brew": "gdal",
-      "RPM": "gdal-devel"
-    }
-  }
+    "name": "libgdal",
+    "title": "Geospatial Data Abstraction Library",
+    "uri": "http://www.gdal.org/",
+
+    "sysreqs": [ "source: GDAL" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libgdal1h" ],
+	  "buildtime-packages": [ "libgdal-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libgdal1i" ],
+	  "buildtime-packages": [ "libgdal-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libgdal20" ],
+	  "buildtime-packages": [ "libgdal-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+	
+	{ "runtime-packages": [ "libgdal1h" ],
+	  "buildtime-packages": [ "libgdal-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libgdal20" ],
+	  "buildtime-packages": [ "libgdal-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "gdal" ],
+	  "buildtime-packages": [ "gdal-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ],
+	  "from-version": "9"
+	},
+	
+	{ "packages": [ "gdal" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

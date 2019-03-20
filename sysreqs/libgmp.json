@@ -1,12 +1,32 @@
 {
-  "libgmp": {
-    "sysreqs": "/\\bgmp\\b/",
-    "platforms": {
-      "DEB": {
-        "runtime": "libgmp10",
-        "buildtime": "libgmp-dev"
-      },
-      "OSX/brew": "gmp"
-    }
-  }
+    "name": "libgmp",
+    "title": "",
+    "uri": "",
+
+    "sysreqs": [ "/\\bgmp\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libgmp10" ],
+	  "buildtime-packages": [ "libgmp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "gmp" ],
+	  "buildtime-packages": [ "gmp-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "gmp" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "gmp" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}	
+    ]
 }

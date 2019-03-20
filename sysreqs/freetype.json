@@ -1,10 +1,32 @@
 {
-  "freetype": {
-    "sysreqs": "\\bfreetype\\b/i",
-    "platforms": {
-      "DEB": "libfreetype6-dev",
-      "OSX/brew": "freetype",
-      "RPM": "freetype-devel"
-    }
-  }
+    "name": "freetype",
+    "title": "FreeType 2 font engine",
+    "uri": "http://www.freetype.org/",
+
+    "sysreqs": [ "\\bfreetype\\b/i" ],
+
+    "dependepncies": [
+
+	{ "runtime-packages": [ "libfreetype6" ],
+	  "buildtime-packages": [ "libfreetype6-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "freetype" ],
+	  "buildtime-packages": [ "freetype-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "freetype" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+	
+	{ "packages": [ "freetype" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

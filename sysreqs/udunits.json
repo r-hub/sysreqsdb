@@ -1,10 +1,27 @@
 {
-  "udunits": {
-    "sysreqs": "/(?:[^-])\\budunits\\b(?![-_.])/",
-    "platforms": {
-       "DEB": "udunits",
-       "OSX/brew": "udunits",
-       "RPM": "udunits"
-    }
-  }
+    "name": "udunits",
+    "title": "Library for handling of units of physical quantities",
+    "uri": "https://www.unidata.ucar.edu/software/udunits/",
+
+    "sysreqs": [ "/(?:[^-])\\budunits\\b(?![-_.])/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libudunits2-0" ],
+	  "buildtime-packages": [ "libudunits2-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "runtime-packages": [ "udunits2" ],
+	  "buildtime-packages": [ "udunits2-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "udunits" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

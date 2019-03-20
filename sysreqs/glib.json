@@ -1,10 +1,27 @@
 {
-    "glib": {
-	"sysreqs": "/\\bGLib\\b/",
-	"platforms": {
-	    "DEB": "libglib2.0-dev",
-	    "OSX/brew": "glib",
-	    "RPM": "glib2-devel"
+    "name": "glib",
+    "title": "GLib library of C routines",
+    "uri": "http://www.gtk.org/",
+
+    "sysreqs": [ "/\\bGLib\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libglib2.0-0" ],
+	  "buildtime-packages": [ "libglib2.0-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "glib2" ],
+	  "buildtime-packages": [ "glib2-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "centos" ]
+	},
+
+	{ "packages": [ "glib" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
 	}
-    }
+    ]
 }

@@ -1,10 +1,32 @@
 {
-  "libsndfile": {
-    "sysreqs": "libsndfile",
-    "platforms": {
-       "DEB": "libsndfile1-dev",
-       "OSX/brew": "libsndfile",
-       "RPM": "libsndfile-devel"
-    }
-  }
+    "name": "libsndfile",
+    "title": "Library for reading/writing audio files",
+    "uri": "http://www.mega-nerd.com/libsndfile/",
+    
+    "sysreqs": [ "libsndfile" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libsndfile1" ],
+	  "buildtime-packages": [ "libsndfile1-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	
+	{ "runtime-packages": [ "libsndfile" ],
+	  "buildtime-packages": [ "libsndfile-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libsndfile" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+	
+	{ "packages": [ "libsndfile" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

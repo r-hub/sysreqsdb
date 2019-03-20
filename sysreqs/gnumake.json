@@ -1,10 +1,22 @@
 {
-  "gnumake": {
-    "sysreqs": ["GNU make", "GNU Make"],
-    "platforms": {
-      "DEB": "make",
-      "OSX/brew": null,
-      "RPM": "make"
-    }
-  }
+    "name": "gnumake",
+    "title": "GNU make",
+    "description": "Utility for directing compilation",
+
+    "sysreqs": [ "GNU make", "GNU Make" ],
+
+    "dependencies": [
+
+	{ "packages": [ "make" ],
+	  "os": "linux"
+	},
+
+	{ "packages": [ ],
+	  "os": "macos"
+	},
+
+	{ "packages": [ ],
+	  "os": "windows"
+	}
+    ]
 }

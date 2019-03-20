@@ -1,10 +1,72 @@
 {
-    "hdf5": {
-        "sysreqs": "hdf5",
-        "platforms": {
-            "DEB": "libhdf5-dev",
-            "OSX/brew": "hdf5",
-            "RPM": "hdf5-devel"
-        }
-    }
+    "name": "hdf5",
+    "title": "Hierarchical Data Format 5 (HDF5)",
+    "uri": "http://hdfgroup.org/HDF5/",
+
+    "sysreqs": "hdf5",
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libhdf5-7" ],
+	  "buildtime-packages": [ "libhdf5-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libhdf5-10" ],
+	  "buildtime-packages": [ "libhdf5-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libhdf5-100" ],
+	  "buildtime-packages": [ "libhdf5-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+	
+	{ "runtime-packages": [ "libhdf5-8" ],
+	  "buildtime-packages": [ "libhdf5-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libhdf5-100" ],
+	  "buildtime-packages": [ "libhdf5-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libhdf5-103" ],
+	  "buildtime-packages": [ "libhdf5-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "hdf5" ],
+	  "buildtime-packages": [ "hdf5-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "hdf5" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+	
+	{ "packages": [ "hdf5" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

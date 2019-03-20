@@ -1,10 +1,32 @@
 {
-  "sasl": {
+    "name": "sasl",
+    "title": "Cyrus SASL - authentication abstraction library ",
+    "uri": "https://www.cyrusimap.org/",
+
     "sysreqs": ["Cyrus", "SASL"],
-    "platforms": {
-       "DEB": "libsasl2-dev",
-       "OSX/brew": null,
-       "RPM": "cyrus-sasl-devel"
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libsasl2-2" ],
+	  "buildtime-packages": [ "libsasl2-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "runtime-packages": [ "cyrus-sasl" ],
+	  "buildtime-packages": [ "cyrus-sasl-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "cyrus-sasl" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

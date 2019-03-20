@@ -1,10 +1,27 @@
 {
-    "pango": {
-	"sysreqs": "/\\bPango\\b/i",
-	"platforms": {
-	    "DEB": "libpango1.0-dev",
-	    "OSX/brew": "pango",
-	    "RPM": "pango-devel"
+    "name": "pango",
+    "title": "Layout and rendering of internationalized text",
+    "uri": "http://www.pango.org/",
+
+    "sysreqs": [ "/\\bPango\\b/i" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libpango-1.0-0" ],
+	  "buildtime-packages": [ "libpango1.0-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "runtime-packages": [ "pango" ],
+	  "buildtime-packages": [ "pango-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "pango" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
 	}
-    }
+    ]
 }

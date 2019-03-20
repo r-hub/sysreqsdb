@@ -1,10 +1,75 @@
 {
-  "libav": {
-    "sysreqs": "libav",
-    "platforms": {
-       "DEB": "libav-tools",
-       "OSX/brew": "libav",
-       "RPM": null
-    }
-  }
+    "name": "libav",
+    "title": "Cross-platform tools and libraries to convert, manipulate and stream a wide range of multimedia formats and protocols.",
+    "uri": "https://libav.org/",
+
+    "sysreqs": [ "libav" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libavutil52" ],
+	  "buildtime-packages": [ "libavutil-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from_version": "14.04",
+	  "before_version": "16.04"
+	},
+	
+	{ "runtime-packages": [ "libavutil-ffmpeg54" ],
+	  "buildtime-packages": [ "libavutil-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from_version": "16.04",
+	  "before_version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libavutil55" ],
+	  "buildtime-packages": [ "libavutil-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from_version": "18.04",
+	  "before_version": "18.10"
+	},
+
+	{ "runtime-packages": [ "libavutil56" ],
+	  "buildtime-packages": [ "libavutil-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from_version": "18.10"
+	},
+
+	{ "runtime-packages": [ "libavutil54" ],
+	  "buildtime-packages": [ "libavutil-dev" ],
+	  "os": "linux",
+	  "distribution": [ "debian" ],
+	  "from_version": "8",
+	  "before_version": "9"
+	},
+
+	{ "runtime-packages": [ "libavutil55" ],
+	  "buildtime-packages": [ "libavutil-dev" ],
+	  "os": "linux",
+	  "distribution": [ "debian" ],
+	  "from_version": "9",
+	  "before_version": "10"
+	},
+
+	{ "runtime-packages": [ "libavutil56" ],
+	  "buildtime-packages": [ "libavutil-dev" ],
+	  "os": "linux",
+	  "distribution": [ "debian" ],
+	  "from_version": "10"
+	},
+
+	{ "runtime-packages": [ "ffmpeg-libs" ],
+	  "buildtime-packages": [ "ffmpeg-libs-devel" ],
+	  "os": "linux",
+	  "distribution": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libav" ],
+	  "os": "macos",
+	  "distribution": [ "brew" ]
+	}
+    ]
 }

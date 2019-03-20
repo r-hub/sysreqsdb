@@ -1,10 +1,80 @@
 {
-  "libproj": {
+    "name": "libproj",
+    "title": "Cartographic projection library",
+    "uri": "http://trac.osgeo.org/proj/",
+
     "sysreqs": ["PROJ.4", "proj.maptools.org"],
-    "platforms": {
-      "DEB": "libproj-dev",
-      "OSX/brew": "proj",
-      "RPM": "proj-devel proj-epsg proj-nad"
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libproj0" ],
+	  "buildtime-packages": [ "libproj-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libproj9" ],
+	  "buildtime-packages": [ "libproj-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libproj12" ],
+	  "buildtime-packages": [ "libproj-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04",
+	  "before-version": "18.10"
+	},
+
+	{ "runtime-packages": [ "libproj13" ],
+	  "buildtime-packages": [ "libproj-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.10"
+	},
+
+	{ "runtime-packages": [ "libproj0" ],
+	  "buildtime-packages": [ "libproj-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libproj12" ],
+	  "buildtime-packages": [ "libproj-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libproj13" ],
+	  "buildtime-packages": [ "libproj-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+	
+	{ "runtime-packages": [ "proj", "proj-epsg", "proj-nad" ],
+	  "buildtime-packages": [ "proj-devel", "proj-epsg", "proj-nad" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "proj" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "proj" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

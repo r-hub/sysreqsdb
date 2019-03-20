@@ -1,10 +1,64 @@
 {
-  "tesseract": {
-    "sysreqs": "tesseract",
-    "platforms": {
-      "DEB": "libtesseract-dev libleptonica-dev tesseract-ocr-eng",
-      "OSX/brew": "tesseract",
-      "RPM": "tesseract-devel leptonica-devel"
-    }
-  }
+    "name": "tesseract",
+    "title": "Command line OCR tool",
+    "uri": "https://github.com/tesseract-ocr/",
+
+    "sysreqs": [ "tesseract" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libtesseract3", "liblept4", "tesseract-ocr-eng" ],
+	  "buildtime-packages": [ "libtesseract-dev", "libleptonica-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+	  
+	{ "runtime-packages": [ "libtesseract3", "liblept5", "tesseract-ocr-eng" ],
+	  "buildtime-packages": [ "libtesseract-dev", "libleptonica-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libtesseract4", "liblept5", "tesseract-ocr-eng" ],
+	  "buildtime-packages": [ "libtesseract-dev", "libleptonica-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libtesseract3", "liblept5", "tesseract-ocr-eng" ],
+	  "buildtime-packages": [ "libtesseract-dev", "libleptonica-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+	  
+	{ "runtime-packages": [ "libtesseract4", "liblept5", "tesseract-ocr-eng" ],
+	  "buildtime-packages": [ "libtesseract-dev", "libleptonica-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "tesseract", "leptonica" ],
+	  "buildtime-packages": [ "tesseract-devel", "leptonica-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "tesseract" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "tesseract-ocr" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

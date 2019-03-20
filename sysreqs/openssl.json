@@ -1,10 +1,57 @@
+
 {
-  "openssl": {
-    "sysreqs": "OpenSSL",
-    "platforms": {
-      "DEB": "libssl-dev",
-      "OSX/brew": "openssl@1.1",
-      "RPM": "openssl-devel"
-    }
-  }
+    "name": "openssl",
+    "title": "Secure Sockets Layer toolkit",
+    "uri": "https://www.openssl.org/",
+
+    "sysreqs": [ "OpenSSL" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libssl1.0.0" ],
+	  "buildtime-packages": [ "libssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "18.04"
+	},
+	  
+	{ "runtime-packages": [ "libssl1.1" ],
+	  "buildtime-packages": [ "libssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libssl1.0.0" ],
+	  "buildtime-packages": [ "libssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+	  
+	{ "runtime-packages": [ "libssl1.1" ],
+	  "buildtime-packages": [ "libssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "openssl-libs" ],
+	  "buildtime-packages": [ "openssl-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "openssl@1.1" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "openssl" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

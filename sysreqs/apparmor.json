@@ -1,8 +1,17 @@
 {
-  "apparmor": {
-    "sysreqs": "/apparmor/i",
-    "platforms": {
-      "DEB": "libapparmor-dev"
-    }
-  }
+    "name": "apparmor",
+    "title": "changehat AppArmor library",
+    "description": "AppArmor gives you network application security via mandatory access control for programs, protecting against the exploitation of software flaws and compromised systems.",
+    "uri": "https://apparmor.net/",
+
+    "sysreqs": [ "/apparmor/i" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libapparmor1" ],
+	  "buildtime-packages": [ "libapparmor-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	}
+    ]
 }

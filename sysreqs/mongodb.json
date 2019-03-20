@@ -1,10 +1,20 @@
 {
-  "mongodb": {
-    "sysreqs": "mongodb",
-    "platforms": {
-       "DEB": "mongodb",
-       "OSX/brew": "mongodb",
-       "RPM": "mongodb-org"
-    }
-  }
+    "name": "mongodb",
+    "title" "Object/document-oriented database",
+    "uri": "https://www.mongodb.org/",
+
+    "sysreqs": [ "mongodb" ],
+
+    "dependencies": [
+
+	{ "packages": [ "mongodb" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]	  
+	},
+
+	{ "packages": [ "mongodb" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

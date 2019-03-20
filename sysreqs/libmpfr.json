@@ -1,10 +1,56 @@
 {
-    "libmpfr": {
-	"sysreqs": "mpfr",
-	"platforms": {
-	    "DEB": "libmpfr-dev",
-	    "OSX/brew": "mpfr",
-	    "RPM": "mpfr-devel"
+    "name": "libmpfr",
+    "title": "Multiple precision floating-point computation",
+    "uri": "http://www.mpfr.org/",
+
+    "sysreqs": [ "mpfr" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libmpfr4" ],
+	  "buildtime-packages": [ "libmpfr-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libmpfr6" ],
+	  "buildtime-packages": [ "libmpfr-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libmpfr4" ],
+	  "buildtime-packages": [ "libmpfr-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libmpfr6" ],
+	  "buildtime-packages": [ "libmpfr-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "mpfr" ],
+	  "buildtime-packages": [ "mpfr-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "mpfr" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+	
+	{ "packages": [ "mpfr" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
 	}
-    }
+    ]
 }

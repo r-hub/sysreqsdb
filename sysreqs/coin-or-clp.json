@@ -1,8 +1,22 @@
 {
-  "coin-or-clp": {
-    "sysreqs": "/COIN-OR Clp/i",
-    "platforms": {
-      "DEB": "coinor-clp"
-    }
-  }
+    "name": "coinor-clp",
+    "title": "Coin-or linear programming solver",
+    "uri": "https://projects.coin-or.org/Clp",
+
+    "sysreqs": [
+	"/COIN-OR Clp/i"
+    ],
+
+    "dependencies": [
+
+	{ "packages": [ "coinor-clp" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "packages": [ "coin-or-Clp" ],
+	  "os": "linux",
+	  "distributions": [ "fedora" ]
+	}
+    ]
 }

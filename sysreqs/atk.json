@@ -1,10 +1,28 @@
 {
-    "atk": {
-	"sysreqs": "/\\bATK\\b/",
-	"platforms": {
-	    "DEB": "libatk1.0-dev",
-	    "OSX/brew": "atk",
-	    "RPM": "atk-devel"
+    "name": "atk",
+    "title": "Development files for the ATK accessibility toolkit",
+    "description": "",
+    "uri": "https://wiki.gnome.org/Accessibility",
+
+    "sysreqs": [ "/\\bATK\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libatk1.0-0" ],
+	  "buildtime-packages": [ "libatk1.0-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "atk" ],
+	  "buildtime-packages": [ "atk-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "atk" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
 	}
-    }
+    ]
 }

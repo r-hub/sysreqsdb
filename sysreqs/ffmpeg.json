@@ -1,9 +1,31 @@
 {
-  "ffmpeg": {
-    "sysreqs": "/FFmpeg/",
-    "platforms": {
-      "DEB": "ffmpeg",
-      "OSX/brew": "ffmpeg"
-    }
-  }
+    "name": "ffmpeg",
+    "title": "Tools for transcoding, streaming and playing of multimedia files",
+    "uri": "https://ffmpeg.org/",
+
+    "sysreqs": [ "FFmpeg" ],
+
+    "dependencies" [
+
+	{ "packages": [ "ffmpeg" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "ffmpeg", "ffmpeg-libs" ],
+	  "buildtime-packages": [ "ffmpeg-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	}
+
+	{ "packages": [ "ffmpeg" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ],
+	}
+
+	{ "packages": [ "ffmpeg" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

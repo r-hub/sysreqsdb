@@ -1,0 +1,31 @@
+{
+    "name": "mysql56",
+    "title": "MySQL database server",
+    "uri": "http://dev.mysql.com/",
+
+    "sysreqs": [ "MySQL (>=5.6)" ],
+
+    "dependencies": [
+
+	{ "packages": [ "mysql-server", "mysql-client" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04"
+	},
+
+	{ "packages": [ "mariadb-server", "mariadb-client" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ]
+	},
+
+	{ "packages": [ "mysql-server", "mysql" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "mysql" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
+}

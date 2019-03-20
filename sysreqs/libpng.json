@@ -1,10 +1,57 @@
 {
-  "libpng": {
-    "sysreqs": "/\\blibpng\\b/",
-    "platforms": {
-      "DEB": "libpng-dev",
-      "OSX/brew": "libpng",
-      "RPM": "libpng-devel"
-    }
-  }
+    "name": "libpng",
+    "title": "PNG library",
+    "uri": "http://libpng.org/pub/png/libpng.html",
+
+    "sysreqs": ["/\\blibpng\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libpng12-0" ],
+	  "buildtime-packages": [ "libpng-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libpng16-16" ],
+	  "buildtime-packages": [ "libpng-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libpng12-0" ],
+	  "buildtime-packages": [ "libpng-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libpng16-16" ],
+	  "buildtime-packages": [ "libpng-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "libpng" ],
+	  "buildtime-packages": [ "libpng-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libpng" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libpng" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+	
+    ]
 }

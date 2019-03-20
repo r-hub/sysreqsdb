@@ -1,31 +1,48 @@
 {
-  "mysql-client": {
+    "name": "mysql-client",
+    "title": "MySQL database client library",
+    "uri": "https://dev.mysql.com/",
+
     "sysreqs": [
-      "/MySQL.MariaDB client headers/",
-      "libmariadb-client-dev",
-      "mariadb-connector-c",
-      "mysql-connector-c"
+	"/MySQL.MariaDB client headers/",
+	"libmariadb-client-dev",
+	"mariadb-connector-c",
+	"mysql-connector-c"
     ],
-    "platforms": {
-      "DEB": [
-        {
-          "distribution": "Ubuntu",
-          "releases": ["precise", "trusty"],
-          "runtime": "libmysqlclient18",
-          "buildtime": "libmysqlclient-dev"
-        },
-        {
-          "distribution": "Debian",
-          "releases": ["squeeze", "wheezy"],
-          "runtime": "libmysqlclient18",
-          "buildtime": "libmysqlclient-dev"
-        },
-        {
-          "buildtime": "libmariadb-client-lgpl-dev",
-          "runtime": "libmariadb2"
-        }
-      ],
-      "OSX/brew": "mariadb-connector-c"
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime": [ "libmysqlclient18" ],
+	  "buildtime": [ "libmysqlclient-dev" ],
+	  "os": "linux",
+	  "distribution": [ "ubuntu" ],
+	  "min_version": "12.04",
+	  "max_version": "14.10"
+	},
+
+	{ "runtime": [ "libmysqlclient18" ],
+	  "buildtime": [ "libmysqlclient-dev" ],
+	  "os": "linux",
+	  "distribution": [ "debian" ],
+	  "min_version": "6.0",
+	  "max_version": "8",
+	  "run_time": true
+	},
+
+	{ "buildtime": [ "libmariadb-client-lgpl-dev" ],
+	  "runtime": [ "libmariadb2" ],
+	  "os": "linux",
+	  "distribution": [ "debian", "ubuntu" ],
+	},
+
+	{ "packages": [ "mariadb-connector-c" ],
+	  "os": "macos",
+	  "distribution": [ "brew" ]
+	},
+
+	{ "packages": [ "libmariadbclient" ],
+	  "os": "windows",
+	  "distribution": [ "msys2" ]
+	}
+    ]
 }

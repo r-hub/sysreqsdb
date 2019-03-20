@@ -1,36 +1,72 @@
 {
-  "libgsl": {
+    "name": "libgsl",
+    "title": "GNU Scientific Library (GSL)",
+    "uri": "http://www.gnu.org/software/gsl",
+
     "sysreqs": ["/Gnu Scientific Library/i", "/\\bgsl\\b/"],
-    "platforms": {
-      "DEB": [
-        {
-          "distribution": "Ubuntu",
-          "releases": ["precise", "trusty", "vivid", "wily"],
-          "runtime": "libgsl0ldbl",
-          "buildtime": "libgsl0-dev"
-        },
-        {
-          "distribution": "Ubuntu",
-          "runtime": "libgsl2",
-          "buildtime": "libgsl-dev"
-        },
-        {
-          "distribution": "Debian",
-          "releases": ["squeeze", "wheezy", "jessie"],
-          "runtime": "libgsl0ldbl",
-          "buildtime": "libgsl0-dev"
-        },
-        {
-          "distribution": "Debian",
-          "runtime": "libgsl2",
-          "buildtime": "libgsl-dev"
-        }
-      ],
-      "OSX/brew": "gsl",
-      "RPM": {
-        "runtime": "gsl",
-        "buildtime": "gsl-devel"
-      }
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libgsl0ldbl" ],
+	  "buildtime-packages": [ "libgsl0-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libgsl2" ],
+	  "buildtime-packages": [ "libgsl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libgsl23" ],
+	  "buildtime-packages": [ "libgsl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libgsl0ldbl" ],
+	  "buildtime-packages": [ "libgsl0-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libgsl2" ],
+	  "buildtime-packages": [ "libgsl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+	
+	{ "runtime-packages": [ "libgsl23" ],
+	  "buildtime-packages": [ "libgsl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "gsl" ],
+	  "buildtime-packages": [ "gsl-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "gsl" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "gsl" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

@@ -1,9 +1,20 @@
 {
-  "bowtie2": {
-    "sysreqs": "bowtie2",
-    "platforms": {
-      "DEB": "bowtie2",
-      "OSX/brew": "homebrew/science/bowtie2"
-    }
-  }
+    "name": "bowtie",
+    "title": "Ultrafast memory-efficient short read aligner",
+    "uri": "http://bowtie-bio.sourceforge.net/",
+
+    "sysreqs": [ "bowtie2" ],
+
+    "dependencies": [
+
+	{ "packages": [ "bowtie2" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "packages": [ "homebrew/science/bowtie2" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

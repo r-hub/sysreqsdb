@@ -1,10 +1,27 @@
 {
-  "v8": {
-    "sysreqs": "/\\bV8\\b/",
-    "platforms": {
-      "DEB": "libv8-dev",
-      "OSX/brew": "v8",
-      "RPM": "v8-314-devel"
-    }
-  }
+    "name": "v8",
+    "title": "V8 JavaScript engine",
+    "uri": "https://bugs.chromium.org/p/v8/issues/list",
+
+    "sysreqs": [ "/\\bV8\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libv8-3.14.5" ],
+	  "buildtime-packages": [ "libv8-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "runtime-packages": [ "v8-314" ],
+	  "buildtime-packages": [ "v8-314-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "v8" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

@@ -1,10 +1,27 @@
 {
-  "libxslt": {
-    "sysreqs": "libxslt",
-    "platforms": {
-       "DEB": "libxslt1-dev",
-       "OSX/brew": "libxslt",
-       "RPM": "libxslt-devel"
-    }
-  }
+    "name": "libxslt",
+    "title": "The XSLT C library for GNOME",
+    "uri": "http://xmlsoft.org/xslt/",
+
+    "sysreqs": [ "libxslt" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libxslt1.1" ],
+	  "buildtime-packages": [ "libxsl1-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "libxslt" ],
+	  "buildtime-packages": [ "libxsl-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libxslt" ],
+	  "os": [ "macos" ],
+	  "distributions": [ "brew" ]
+	}
+    ]    
 }

@@ -1,22 +1,27 @@
 {
-  "libdb_stl": {
+    "name": "libdb_stl",
+    "title": "Berkeley v5.3 Database Libraries",
+    "uri": "http://www.oracle.com/technology/software/products/berkeley-db/index.html",
+
     "sysreqs": ["/libdb_stl/"],
-    "platforms": {
-      "DEB": [
-        {
-          "distribution": "Ubuntu",
-          "releases": ["bionic", "cosmic", "artful", "xenial", "trusty"],
-          "runtime": "libdb5.3-stl-dev",
-          "buildtime": "libdb5.3-stl"
-        },
-        {
-          "distribution": "Debian",
-          "releases": ["jessie", "stretch", "buster", "sid"],
-          "runtime": "libdb5.3-stl-dev",
-          "buildtime": "libdb5.3-stl"
-        }
-      ],
-      "OSX/brew": "berkeley-db"
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libdb5.3-stl" ],
+	  "buildtime-packages": [ "libdb5.3-stl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "libdb" ],
+	  "buildtime-packages": [ "libdb-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": "berkeley-db",
+	  "os": "macos",
+	  "distrobutions": [ "brew" ],
+	}
+    ]
 }

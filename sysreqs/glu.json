@@ -1,10 +1,32 @@
 {
-  "glu": {
-    "sysreqs": "/\\bGLU\\b/i",
-    "platforms": {
-      "DEB": "libglu1-mesa-dev",
-      "OSX/brew": null,
-      "RPM": "mesa-libGLU-devel"
-    }
-  }
+    "name": "glu",
+    "title": "OpenGL utility library",
+    "uri": "https://www.opengl.org/resources/libraries/",
+
+    "sysreqs": [ "/\\bGLU\\b/i" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libglu1-mesa" ],
+	  "buildtime-packages": [ "libglu1-mesa-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "mesa-libGLU" ],
+	  "buildtime-packages": [ "mesa-libGLU-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+	
+	{ "packages": [ ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}	
+    ]
 }

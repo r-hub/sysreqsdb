@@ -1,9 +1,20 @@
 {
-  "tktable": {
+    "name": "tktable",
+    "title": "Table extension for Tcl/Tk",
+    "uri": "http://tktable.sourceforge.net/",
+
     "sysreqs": ["Tktable", "tktable"],
-    "platforms": {
-      "DEB": "tk-table",
-      "RPM": "tktable"
-    }
-  }
+
+    "dependencies": [
+
+	{ "packages": [ "tk-table" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "packages": [ "tktable" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	}
+    ]
 }

@@ -1,9 +1,20 @@
 {
-  "swftools": {
-    "sysreqs": "/SWF Tools/",
-    "platforms": {
-      "DEB": "swftools",
-      "OSX/brew": "swftools"
-    }
-  }
+    "name": "swftools",
+    "title": "Collection of utilities for SWF file manipulation/creation",
+    "uri": "http://www.swftools.org/",
+
+    "sysreqs": [ "/SWF Tools/" ],
+
+    "dependencies": [
+
+	{ "packages": [ "swftools" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "swftools" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

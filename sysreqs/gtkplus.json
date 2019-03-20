@@ -1,10 +1,27 @@
 {
-    "gtkplus": {
-	"sysreqs": "/\\bGTK\\+/",
-	"platforms": {
-	    "DEB": "libgtk2.0-dev",
-	    "OSX/brew": "gtk+",
-	    "RPM": "gtk2-devel"
+    "name": "gtkplus",
+    "title": "GTK+ library",
+    "uri": "http://www.gtk.org/",
+
+    "sysreqs": [ "/\\bGTK\\+/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libgtk2.0-0" ],
+	  "buildtime-packages": [ "libgtk2.0-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "gtk2" ],
+	  "buildtime-packages": [ "gtk2-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+	
+	{ "packages": [ "gtk+" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
 	}
-    }
+    ]
 }

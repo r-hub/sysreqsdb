@@ -1,10 +1,46 @@
 {
-  "java": {
+    "name": "java",
+    "title": "Java runtime",
+    "uri": "https://www.java.com/en/",
+
     "sysreqs": [ "Java", "java" ],
-    "platforms": {
-      "DEB": "openjdk-7-jre-headless",
-      "OSX/brew": null,
-      "RPM": "java-1.8.0-openjdk"
-    }
-  }
+
+    "dependencies": [
+
+	{ "packages": [ "openjdk-7-jre-headless" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "packages": [ "openjdk-8-jdk-headless" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04"
+	},
+
+	{ "packages": [ "openjdk-7-jdk-headless" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "packages": [ "openjdk-8-jdk-headless" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "packages": [ "java-1.8.0-openjdk" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+	
+	{ "packages": [ ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

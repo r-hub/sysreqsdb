@@ -1,10 +1,56 @@
 {
-  "libcurl": {
-    "sysreqs": "libcurl",
-    "platforms": {
-      "DEB": "libcurl4-openssl-dev",
-      "OSX/brew": null,
-      "RPM": "libcurl-devel"
-    }
-  }
+    "name": "libcurl",
+    "title": "Easy-to-use client-side URL transfer library",
+    "uri": "http://curl.haxx.se/",
+
+    "sysreqs": [ "libcurl" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libcurl3" ],
+	  "buildtime-packages": [ "libcurl4-openssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libcurl4" ],
+	  "buildtime-packages": [ "libcurl4-openssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libcurl3" ],
+	  "buildtime-packages": [ "libcurl4-openssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libcurl4" ],
+	  "buildtime-packages": [ "libcurl4-openssl-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "libcurl" ],
+	  "buildtime-packages": [ "libcurl-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "linux",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "curl" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

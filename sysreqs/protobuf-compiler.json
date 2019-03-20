@@ -1,10 +1,80 @@
 {
-  "protobuf-compiler": {
-    "sysreqs": "protobuf-compiler",
-    "platforms": {
-      "DEB": "protobuf-compiler libprotoc-dev",
-      "OSX/brew": "protobuf",
-      "RPM": "protobuf-compiler"
-    }
-  }
+    "name": "protobuf-compiler",
+    "title": "Compiler for protocol buffer definition files",
+    "uri": "https://github.com/google/protobuf/",
+
+    "sysreqs": [ "protobuf-compiler" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "protobuf-compiler", "libprotoc8" ],
+	  "buildtime-packages": [ "protobuf-compiler", "libprotoc-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "protobuf-compiler", "libprotoc9v5" ],
+	  "buildtime-packages": [ "protobuf-compiler", "libprotoc-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "protobuf-compiler", "libprotoc10" ],
+	  "buildtime-packages": [ "protobuf-compiler", "libprotoc-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04",
+	  "before-version": "19.04"
+	},
+	
+	{ "runtime-packages": [ "protobuf-compiler", "libprotoc17" ],
+	  "buildtime-packages": [ "protobuf-compiler", "libprotoc-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "19.04"
+	},
+
+	{ "runtime-packages": [ "protobuf-compiler", "libprotoc9" ],
+	  "buildtime-packages": [ "protobuf-compiler", "libprotoc-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "protobuf-compiler", "libprotoc10" ],
+	  "buildtime-packages": [ "protobuf-compiler", "libprotoc-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "protobuf-compiler", "libprotoc17" ],
+	  "buildtime-packages": [ "protobuf-compiler", "libprotoc-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+	
+	{ "runtime-packages": [ "protobuf-compiler" ],
+	  "buildtime-packages": [ "protobuf-compiler", "protobuf-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "protobuf" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "protobuf" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

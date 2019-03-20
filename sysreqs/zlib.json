@@ -1,10 +1,32 @@
 {
-  "zlib": {
-    "sysreqs": "/\\bzlib\\b/i",
-    "platforms": {
-      "DEB": "zlib1g-dev",
-      "OSX/brew": "zlib",
-      "RPM": "zlib-devel"
-    }
-  }
+    "name": "zlib1g",
+    "title": "Compression library",
+    "uri": "http://zlib.net/",
+
+    "sysreqs": [ "/\\bzlib\\b/i" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "zlib1g" ],
+	  "buildtime-packages": [ "zlib1g-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "runtime-packages": [ "zlib" ],
+	  "buildtime-packages": [ "zlib-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "zlib" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "zlib" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

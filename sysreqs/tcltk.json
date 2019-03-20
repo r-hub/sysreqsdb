@@ -1,10 +1,25 @@
 {
-  "tcltk": {
-    "sysreqs": "Tcl/Tk (>= 8.5)",
-    "platforms": {
-      "DEB": ["tcl8.5", "tk8.6"],
-      "OSX/brew": "tcl-tk",
-      "RPM": ["tcl", "tk"]
-    }
-  }
+    "name": "tcltk",
+    "title": "Toolkit for Tcl and X11",
+    "uri": "https://www.tcl.tk/",
+
+    "sysreqs": [ "Tcl/Tk (>= 8.5)" ],
+
+    "dependencies": [
+
+	{ "packages": [ "tcl", "tk" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "tcl-tk" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "tcl", "tk" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

@@ -1,10 +1,27 @@
 {
-  "imagemagick": {
-    "sysreqs": "/Image[ ]?Magick/i",
-    "platforms": {
-      "DEB": "imagemagick",
-      "OSX/brew": "imagemagick@6",
-      "RPM": "ImageMagick"
-    }
-  }
+    "name": "imagemagick",
+    "title": "ImageMagick",
+    "description": "Image manipulation programs"
+    "uri": "https://www.imagemagick.org/",
+
+    "sysreqs": [ "/Image[ ]?Magick/i" ],
+
+    "dependencies": [
+
+	{ "packages": [ "imagemagick" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "packages": [ "ImageMagick" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "imagemagick@6" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+	
+    ]
 }

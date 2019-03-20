@@ -1,10 +1,56 @@
 {
-  "poppler": {
-    "sysreqs": "poppler",
-    "platforms": {
-      "DEB": "libpoppler-cpp-dev",
-      "OSX/brew": "poppler",
-      "RPM": "poppler-cpp-devel"
-    }
-  }
+    "name": "poppler",
+    "title": "PDF rendering library",
+    "uri": "http://poppler.freedesktop.org/",
+
+    "sysreqs": [ "poppler" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libpoppler-cpp0" ],
+	  "buildtime-packages": [ "libpoppler-cpp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+	  
+	{ "runtime-packages": [ "libpoppler-cpp0v5" ],
+	  "buildtime-packages": [ "libpoppler-cpp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libpoppler-cpp0" ],
+	  "buildtime-packages": [ "libpoppler-cpp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+	  
+	{ "runtime-packages": [ "libpoppler-cpp0v5" ],
+	  "buildtime-packages": [ "libpoppler-cpp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},	
+	
+	{ "runtime-packages": [ "poppler-cpp" ],
+	  "buildtime-packages": [ "poppler-cpp-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "poppler" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "poppler", "poppler-data" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

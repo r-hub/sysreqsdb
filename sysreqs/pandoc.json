@@ -1,10 +1,21 @@
 {
-  "pandoc": {
+
+    "name": "pandoc",
+    "title": "Universal markup converter",
+    "uri": "https://pandoc.org/",
+
     "sysreqs": ["pandoc", "Pandoc"],
-    "platforms": {
-      "DEB": "pandoc pandoc-citeproc",
-      "RPM": "pandoc pandoc-citeproc",
-      "OSX/brew": "pandoc pandoc-citeproc"
-    }
-  }
+
+    "dependencies": [
+
+	{ "packages": [ "pandoc", "pandoc-citeproc" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+	
+	{ "packages": [ "pandoc", "pandoc-citeproc" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

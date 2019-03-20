@@ -1,12 +1,28 @@
 {
-  "cxx11": {
-    "sysreqs": "C++11",
-    "platforms": {
-      "DEB": null,
-      "OSX/brew": null,
-      "RPM": null,
-      "Windows": null
-    },
-    "comment": "We don't do anything special for C++-11"
-  }
+    "name": "cxx11",
+    "title": "C++ compiler that supports C++-11",
+    "comment": "We don't do anything special for C++-11",
+
+    "sysreqs": [
+	"C++11"
+    ],
+
+    "dependencies": [
+
+	{ "packages": [],
+	  "os": "linux"
+	},
+
+	{ "packages": [],
+	  "os": "macos"
+	},
+
+	{ "packages": [],
+	  "os": "windows"
+	},
+
+	{ "packages": [],
+	  "os": "solaris"
+	}
+    ]
 }

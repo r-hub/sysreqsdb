@@ -1,10 +1,32 @@
 {
-  "libtiff": {
-    "sysreqs": "/\\blibtiff\\b/",
-    "platforms": {
-      "DEB": "libtiff-dev",
-      "OSX/brew": "libtiff",
-      "RPM": "libtiff-devel"
-    }
-  }
+    "name": "libtiff",
+    "title": "Tag Image File Format library (TIFF)",
+    "uri": "http://libtiff.maptools.org/",
+
+    "sysreqs": [ "/\\blibtiff\\b/" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libtiff5" ],
+	  "buildtime-packages": [ "libtiff-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "libtiff" ],
+	  "buildtime-packages": [ "libtiff-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+	
+	{ "packages": [ "libtiff" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libtiff" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

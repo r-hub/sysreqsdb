@@ -1,10 +1,56 @@
 {
-  "webp": {
-    "sysreqs": "webp",
-    "platforms": {
-      "DEB": "libwebp-dev",
-      "OSX/brew": "webp",
-      "RPM": "libwebp-devel"
-    }
-  }
+    "name": "webp",
+    "title": "Lossy compression of digital photographic images",
+    "uri": "https://developers.google.com/speed/webp/",
+
+    "sysreqs": [ "webp" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libwebp5" ],
+	  "buildtime-packages": [ "libwebp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "18.04"
+	},
+	  
+	{ "runtime-packages": [ "libwebp6" ],
+	  "buildtime-packages": [ "libwebp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libwebp5" ],
+	  "buildtime-packages": [ "libwebp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+	  
+	{ "runtime-packages": [ "libwebp6" ],
+	  "buildtime-packages": [ "libwebp-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "libwebp" ],
+	  "buildtime-packages": [ "libwebp-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "webp" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libwebp" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

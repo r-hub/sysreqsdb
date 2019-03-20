@@ -1,11 +1,37 @@
 {
-  "libarchive": {
-    "sysreqs": "libarchive",
-    "platforms": {
-      "DEB": "libarchive-dev",
-      "OSX/brew": "libarchive",
-      "RPM": "libarchive-devel",
-      "CSW": "libarchive_dev"
-    }
-  }
+    "name": "libarchive",
+    "title": "Multi-format archive and compression library"
+    "url": "https://www.libarchive.org/",
+
+    "sysreqs": [ "libarchive" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libarchive13" ],
+	  "buildtime-packages": [ "libarchive-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "libarchive" ],
+	  "buildtime-packages": [ "libarchive-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libarchive " ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libarchive" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	},
+
+	{ "runtime-packages": [ "libarchive_dev" ],
+	  "buildtime-packages": [ "libarchive12" ],
+	  "os": "solaris"
+	}
+    ]
 }

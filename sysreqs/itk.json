@@ -1,10 +1,67 @@
 {
-  "itk": {
-    "sysreqs": "itk",
-    "platforms": {
-      "DEB": "insighttoolkit4-python libinsighttoolkit4-dev",
-      "RPM": "InsightToolkit-devel InsightToolkit-vtk-devel",
-      "OSX/brew": "insighttoolkit"
-    }
-  }
+    "name": "itk",
+    "title": "Image processing toolkit for registration and segmentation",
+    "uri": "http://www.itk.org/",
+
+    "sysreqs": [ "itk" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libinsighttoolkit4.5", "insighttoolkit4-python" ],
+	  "buildtime-packages": [ "libinsighttoolkit4-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libinsighttoolkit4.9", "insighttoolkit4-python" ],
+	  "buildtime-packages": [ "libinsighttoolkit4-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+	
+	{ "runtime-packages": [ "libinsighttoolkit4.12", "insighttoolkit4-python" ],
+	  "buildtime-packages": [ "libinsighttoolkit4-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libinsighttoolkit4.6", "insighttoolkit4-python" ],
+	  "buildtime-packages": [ "libinsighttoolkit4-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libinsighttoolkit4.10", "insighttoolkit4-python" ],
+	  "buildtime-packages": [ "libinsighttoolkit4-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libinsighttoolkit4.12", "insighttoolkit4-python" ],
+	  "buildtime-packages": [ "libinsighttoolkit4-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "InsightToolkit", "InsightToolkit-vtk" ],
+	  "buildtime-packages": [ "InsightToolkit-devel", "InsightToolkit-vtk-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "insighttoolkit" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

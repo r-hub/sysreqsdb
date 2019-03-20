@@ -1,10 +1,32 @@
 {
-  "opengl": {
-    "sysreqs": "OpenGL",
-    "platforms": {
-      "DEB": "libgl1-mesa-dev",
-      "OSX/brew": null,
-      "RPM": "mesa-libGL-devel"
-    }
-  }
+    "name": "opengl",
+    "title": "OpenGL utility library",
+    "uri": "https://www.opengl.org/resources/libraries/",
+
+    "sysreqs": [ "OpenGL" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libgl1" ],
+	  "buildtime-packages": [ "libgl1-mesa-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "mesa-libGL" ],
+	  "buildtime-packages": [ "mesa-libGL-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+	
+	{ "packages": [ ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}	
+    ]
 }

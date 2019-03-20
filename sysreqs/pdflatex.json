@@ -1,10 +1,20 @@
 {
-  "pdflatex": {
-    "sysreqs": "/(PDF)LaTeX/i",
-    "platforms": {
-      "DEB": "texlive-latex-base",
-      "OSX/brew": null,
-      "RPM": "texlive-collection-basic"
-    }
-  }
+    "name": "pdflatex",
+    "title": "TeX Live: LaTeX fundamental packages (pdflatex)",
+    "uri": "http://www.tug.org/texlive/",
+
+    "sysreqs": [ "/(PDF)LaTeX/i" ],
+
+    "dependencies": [
+
+	{ "packages": [ "texlive-latex-base" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "packages": [ "texlive-collection-basic" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	}
+    ]
 }

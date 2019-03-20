@@ -1,9 +1,27 @@
 {
-  "libbsd": {
-    "sysreqs": "libbsd",
-    "platforms": {
-      "DEB": "libbsd-dev",
-      "RPM": "libbsd-devel"
-    }
-  }
+    "name": "libbsd",
+    "title": "Utility functions from BSD systems",
+    "uri": "http://libbsd.freedesktop.org/",
+
+    "sysreqs": [ "libbsd" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libbsd0" ],
+	  "buildtime-packages": [ "libbsd-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "libbsd" ],
+	  "buildtime-packages": [ "libbsd-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libbsd" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

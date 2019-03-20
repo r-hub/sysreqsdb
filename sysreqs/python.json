@@ -1,12 +1,38 @@
 {
-  "python-2.7": {
-    "sysreqs": [ "python (>= 2.7", "python (>= 2.4)", "Python (>=2.76)", "Python 2.7",
-                 "Python (= 2.7)", "Python 2.7.x", "Python (>= 2.7.0)",
-                 "Python (>= 2.4.0)", "Python (>=2.6)", "Python (>= 2.7" ],
-    "platforms": {
-      "DEB": "python-minimal",
-      "OSX/brew": null,
-      "RPM": "python"
-    }
-  }
+    "name": "python-2.7",
+    "title": "Interactive high-level object-oriented language",
+    "uri": "https://www.python.org/",
+
+    "sysreqs": [ "python (>= 2.7", "python (>= 2.4)",
+		 "Python (>=2.76)",
+		 "Python 2.7",
+                 "Python (= 2.7)",
+		 "Python 2.7.x",
+		 "Python (>= 2.7.0)",
+                 "Python (>= 2.4.0)",
+		 "Python (>=2.6)",
+		 "Python (>= 2.7" ],
+
+    "dependencies": [
+
+	{ "packages": [ "python-minimal" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "packages": [ "python" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "python3" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

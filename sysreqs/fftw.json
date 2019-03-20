@@ -1,10 +1,32 @@
 {
-  "fftw": {
-    "sysreqs": "fftw",
-    "platforms": {
-      "DEB": "libfftw3-dev",
-      "OSX/brew": "fftw",
-      "RPM": "fftw-devel"
-    }
-  }
+    "name": "fftw",
+    "title": "Library for computing Fast Fourier Transforms",
+    "uri": "http://fftw.org/",
+
+    "sysreqs": [ "fftw" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libfftw3-3" ],
+	  "buildtime-packages": [ "libfftw3-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	
+	{ "runtime-packages": [ "fftw" ],
+	  "buildtime-packages": [ "fftw-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+	
+	{ "packages": [ "fftw" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "fftw" ],
+	  "os": "windows",
+	  "distributions": [ "brew" ]
+	}	
+    ]
 }

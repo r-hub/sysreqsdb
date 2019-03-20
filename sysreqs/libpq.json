@@ -1,10 +1,32 @@
 {
-  "libpq": {
-    "sysreqs": "libpq",
-    "platforms": {
-      "DEB": "libpq-dev",
-      "OSX/brew": "libpq",
-      "RPM": "postgresql-devel"
-    }
-  }
+    "name": "libpq",
+    "title": "PostgreSQL library",
+    "uri": "http://www.postgresql.org/",
+
+    "sysreqs": [ "libpq", "PostgreSQL client library" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libpq5" ],
+	  "buildtime-packages": [ "libpq-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "postgresql-libs" ],
+	  "buildtime-packages": [ "postgresql-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libpq" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libpq" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}	
+    ]
 }

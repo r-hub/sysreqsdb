@@ -1,10 +1,30 @@
 {
-  "pkgconfig": {
-    "sysreqs": "/pkg(:-|)config/",
-    "platforms": {
-      "DEB": "pkg-config",
-      "OSX/brew": "pkg-config",
-      "RPM": "pkgconfig"
-    }
-  }
+    "name": "pkgconfig",
+    "title": "Manage compile and link flags for libraries",
+    "uri": "http://pkg-config.freedesktop.org/",
+
+    "sysreqs": [ "/pkg(:-|)config/" ],
+
+    "dependencies": [
+
+	{ "packages": [ "pkg-config" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "packages": [ "pkgconfig" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "pkg-config" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "pkg-config" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

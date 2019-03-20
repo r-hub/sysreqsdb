@@ -1,9 +1,25 @@
 {
-  "qgis": {
-    "sysreqs": "/QGIS/",
-    "platforms": {
-      "DEB": "qgis",
-      "OSX/brew": "qgis2"
-    }
-  }
+    "name": "qgis",
+    "title": "Geographic Information System (GIS)",
+    "uri": "https://qgis.org/",
+
+    "sysreqs": [ "QGIS" ],
+
+    "dependencies": [
+
+	{ "packages": [ "qgis" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "qgis2" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

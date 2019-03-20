@@ -1,10 +1,20 @@
 {
-  "perl": {
-    "sysreqs": "Perl (>=5)",
-    "platforms": {
-      "DEB": "perl",
-      "OSX/brew": null,
-      "RPM": "perl"
-    }
-  }
+    "name": "perl",
+    "title": "Larry Wall's Practical Extraction and Report Language",
+    "uri": "http://dev.perl.org/perl5/",
+
+    "sysreqs": [ "Perl (>=5)" ],
+
+    "dependencies": [
+
+	{ "packages": [ "perl" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

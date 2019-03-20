@@ -1,16 +1,35 @@
 {
-  "cairo": {
-    "sysreqs": ["cairo", "Cairo"],
-    "platforms": {
-      "DEB": {
-        "runtime": "libcairo2",
-        "buildtime": "libcairo2-dev"
-      },
-      "OSX/brew": "cairo",
-      "RPM": {
-        "runtime": "cairo",
-        "buildtime": "cairo-devel"
-      }
-    }
-  }
-}
+    "name": "cairo",
+    "title": "Cairo 2D vector graphics library",
+    "uri": "https://cairographics.org/",
+
+    "sysreqs": [
+	"cairo",
+	"Cairo"
+    ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libcairo2" ],
+	  "buildtime-packages": [ "libcairo-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "cairo" ],
+	  "buildtime-packages": [ "cairo-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "cairo" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "cairo" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
+}			 

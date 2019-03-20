@@ -1,10 +1,75 @@
 {
-  "magick++": {
-    "sysreqs": "Magick++",
-    "platforms": {
-      "DEB": "libmagick++-dev",
-      "OSX/brew": "imagemagick@6",
-      "RPM": "ImageMagick-c++-devel"
-    }
-  }
+    "name": "magick++",
+    "title": "Object-oriented C++ interface to ImageMagick",
+    "uri": "https://www.imagemagick.org/",
+
+    "sysreqs": [ "Magick++" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libmagick++5" ],
+	  "buildtime-packages": [ "libmagick++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libmagick++-6.q16-5v5" ],
+	  "buildtime-packages": [ "libmagick++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libmagick++-6.q16-7" ],
+	  "buildtime-packages": [ "libmagick++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04",
+	  "before-version": "18.10"
+	},
+
+	{ "runtime-packages": [ "libmagick++-6.q16-8" ],
+	  "buildtime-packages": [ "libmagick++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.10"
+	},
+
+	{ "runtime-packages": [ "libmagick++5" ],
+	  "buildtime-packages": [ "libmagick++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libmagick++-6.q16-7" ],
+	  "buildtime-packages": [ "libmagick++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libmagick++-6.q16-8" ],
+	  "buildtime-packages": [ "libmagick++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "ImageMagick-c++" ],
+	  "buildtime-packages": [ "ImageMagick-c++-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "imagemagick@6" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

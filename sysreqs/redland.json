@@ -1,10 +1,32 @@
 {
-  "redland": {
+    "name": "redland",
+    "title": "Redland Resource Description Framework (RDF) library",
+    "uri": "http://librdf.org/",
+
     "sysreqs": ["/redland/", "/librdf/"],
-   "platforms": {
-      "DEB": "librdf0-dev",
-      "OSX/brew": "redland",
-      "RPM": "redland-devel"
-    }
-  }
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "librdf0" ],
+	  "buildtime-packages": [ "librdf0-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "runtime-packages": [ "redland" ],
+	  "buildtime-packages": [ "redland-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "redland" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "redland" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
 }

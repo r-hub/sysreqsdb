@@ -1,10 +1,20 @@
 {
-  "dcraw": {
-    "sysreqs": "/dcraw/i",
-    "platforms": {
-      "DEB": "dcraw",
-      "RPM": "dcraw",
-      "OSX/brew": "dcraw"
-    }
-  }
+    "name": "dcraw",
+    "title": "Decode raw digital camera images",
+    "uri": "http://www.cybercom.net/~dcoffin/dcraw/",
+
+    "sysreqs": [
+	"/dcraw/i"
+    ],
+
+    "dependencies": [
+
+	{ "packages": [ "dcraw" ],
+	  "os": "linux"
+	},
+
+	{ "packages": [ "dcraw" ],
+	  "os": "macos"
+	}
+    ]
 }

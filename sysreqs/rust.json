@@ -1,10 +1,20 @@
 {
-  "rust": {
+    "name": "rust",
+    "title": "Rust systems programming language",
+    "uri": "http://www.rust-lang.org/",
+
     "sysreqs": ["cargo", "rust", "rustc"],
-    "platforms": {
-      "DEB": "cargo",
-      "RPM": "cargo",
-      "OSX/brew": "rust"      
-    }
-  }
+
+    "dependencies": [
+
+	{ "packages": [ "cargo" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "rust" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

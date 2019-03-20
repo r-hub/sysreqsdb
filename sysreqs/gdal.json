@@ -1,10 +1,25 @@
 {
-  "gdal": {
-    "sysreqs": "/\\bGDAL\\b/",
-    "platforms": {
-      "DEB": "gdal-bin",
-      "OSX/brew": "gdal",
-      "RPM": "gdal"
-    }
-  }
+    "name": "gdal",
+    "title": "Geospatial Data Abstraction Library",
+    "uri": "http://www.gdal.org/",
+
+    "sysreqs": [ "/\\bGDAL\\b/" ],
+
+    "dependencies": [
+
+	{ "packages": [ "gdal-bin" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "packages": [ "gdal" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "gdal" ],
+	  "os": "macos",
+	  "distributions": "brew"
+	}
+    ]
 }

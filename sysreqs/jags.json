@@ -1,9 +1,24 @@
 {
-  "jags": {
-    "sysreqs": "/jags\\b/i",
-    "platforms": {
-      "DEB": "jags",
-      "OSX/brew": "jags"
-    }
-  }
+    "name": "jags",
+    "title": "Just Another Gibbs Sampler for Bayesian MCMC",
+    "uri": "http://www-fis.iarc.fr/~martyn/software/jags/",
+
+    "sysreqs": [ "/jags\\b/i" ],
+    
+    "dependencies": [
+
+	{ "packages": [ "jags" ],
+	  "os": "linux"
+	},
+
+	{ "packages": [ "jags" ],
+	  "os": "macos",
+	  "distribution": [ "brew" ]
+	},
+
+	{ "packages": [ "jags" ],
+	  "os": "windows",
+	  "distribution": [ "msys2" ]
+	}	
+    ]
 }

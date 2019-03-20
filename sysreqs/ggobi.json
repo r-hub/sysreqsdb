@@ -1,10 +1,19 @@
 {
-  "ggobi": {
-    "sysreqs": "/ggobi/",
-    "platforms": {
-      "DEB": "ggobi",
-      "OSX/brew": "ggobi",
-      "RPM": "ggobi"
-    }
-  }
+    "name": "ggobi",
+    "title": "Data visualization system for high-dimensional data",
+    "uri": "http://www.ggobi.org/",
+
+    "sysreqs": [ "ggobi" ],
+
+    "dependencies": [
+
+	{ "packages": [ "ggobi" ],
+	  "os": "linux"
+	},
+
+	{ "packages": [ "ggobi" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

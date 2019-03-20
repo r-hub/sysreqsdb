@@ -1,10 +1,19 @@
 {
-  "git": {
-    "sysreqs": "git",
-    "platforms": {
-      "DEB": "git-core",
-      "RPM": "git",
-      "OSX/brew": "git"
-    }
-  }
+    "name": "git",
+    "title": "Fast, scalable, distributed revision control system",
+    "uri": "https://git-scm.com/",
+
+    "sysreqs": [ "git" ],
+
+    "dependencies": [
+
+	{ "packages": [ "git" ],
+	  "os": "linux"
+	},
+
+	{ "packages": [ "git" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

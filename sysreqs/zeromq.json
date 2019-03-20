@@ -1,10 +1,51 @@
 {
-  "zeromq": {
-    "sysreqs": "/zeromq/i",
-    "platforms": {
-      "DEB": "libzmq3-dev",
-      "OSX/brew": "zeromq",
-      "RPM": "zeromq-devel"
-    }
-  }
+    "name": "zeromq",
+    "title": "Lightweight messaging kernel",
+    "uri": "http://www.zeromq.org/",
+
+    "sysreqs": [ "/zeromq/i" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libzmq3" ],
+	  "buildtime-packages": [ "libzmq3-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+	  
+	{ "runtime-packages": [ "libzmq5" ],
+	  "buildtime-packages": [ "libzmq3-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libzmq3" ],
+	  "buildtime-packages": [ "libzmq3-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+	  
+	{ "runtime-packages": [ "libzmq5" ],
+	  "buildtime-packages": [ "libzmq3-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9"
+	},
+
+	{ "runtime-packages": [ "zeromq" ],
+	  "buildtime-packages": [ "zeromq-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "zeromq" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

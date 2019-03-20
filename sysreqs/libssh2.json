@@ -1,10 +1,32 @@
 {
-  "libssh2": {
-    "sysreqs": "/libssh2/i",
-    "platforms": {
-      "DEB": "libssh2-1-dev",
-      "RPM": "libssh2-devel",
-      "OSX/brew": "libssh2"
-    }
-  }
+    "name": "libssh2",
+    "title": "",
+    "uri": "",
+
+    "sysreqs": [ "/libssh2/i" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libssh2-1" ],
+	  "buildtime-packages": [ "libssh2-1-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	
+	{ "runtime-packages": [ "libssh2" ],
+	  "buildtime-packages": [ "libssh2-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libssh2" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libssh2" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}	
+    ]
 }

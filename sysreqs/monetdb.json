@@ -1,10 +1,15 @@
 {
-  "monetdb": {
-    "sysreqs": "monetdb",
-    "platforms": {
-       "DEB": "monetdb5-sql",
-       "OSX/brew": "monetdb",
-       "RPM": "MonetDB-SQL-server5 MonetDB-client"
-    }
-  }
+    "name": "monetdb",
+    "title": "Column-store database",
+    "uri": "https://www.monetdb.org/",
+
+    "sysreqs": [ "monetdb" ],
+
+    "dependencies": [
+
+	{ "packages": [ "monetdb" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

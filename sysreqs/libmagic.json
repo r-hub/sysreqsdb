@@ -1,10 +1,27 @@
 {
-  "libmagic": {
-    "sysreqs": "libmagic",
-    "platforms": {
-       "DEB": "libmagic-dev",
-       "OSX/brew": "libmagic",
-       "RPM": "file-devel"
-    }
-  }
+    "name": "libmagic",
+    "title": "File type determination library using \"magic\" numbers",
+    "uri": "http://www.darwinsys.com/file/",
+
+    "sysreqs": [ "libmagic" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libmagic1" ],
+	  "buildtime-packages": [ "libmagic-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "runtime-packages": [ "file-libs" ],
+	  "buildtime-packages": [ "file-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libmagic " ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

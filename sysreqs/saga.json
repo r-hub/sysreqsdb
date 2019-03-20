@@ -1,9 +1,27 @@
 {
-  "saga": {
-    "sysreqs": "/SAGA GIS/",
-    "platforms": {
-      "DEB": "saga",
-      "OSX/brew": "saga-gis-lts"
-    }
-  }
+    "name": "saga",
+    "title": "System for Automated Geoscientific Analyses",
+    "uri": "http://www.saga-gis.org/",
+
+    "sysreqs": [ "SAGA GIS" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "saga" ],
+	  "buildtime-packages": [ "libsaga-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	  
+	{ "runtime-packages": [ "saga" ],
+	  "buildtime-packages": [ "saga-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "saga-gis-lts" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

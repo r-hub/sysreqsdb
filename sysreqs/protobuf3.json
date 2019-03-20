@@ -1,11 +1,25 @@
 {
-  "protobuf3": {
-    "sysreqs": ["protobuf3"],
-    "platforms": {
-      "DEB": {"script": "protobuf-installer.sh"},
-      "RPM": {"script": "protobuf-installer.sh"},
-      "OSX/brew": "protobuf"
-    }
-  }  
-}
+    "name": "protobuf3",
+    "title": "Protocol buffers (Google's data interchange format)",
+    "uri": "https://github.com/protocolbuffers/protobuf/",
 
+    "sysreqs": [ "protobuf3" ],
+
+    "dependencies": [
+
+	{ "script": [ "protobuf-installer.sh" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "protobuf@3.7" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "protobuf" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}
+    ]
+}

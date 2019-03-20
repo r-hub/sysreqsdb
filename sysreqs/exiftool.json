@@ -1,10 +1,25 @@
 {
-  "exiftool": {
-    "sysreqs": "exiftool",
-    "platforms": {
-       "DEB": "libimage-exiftool-perl",
-       "OSX/brew": "exiftool",
-       "RPM": null
-    }
-  }
+    "name": "exiftool",
+    "title": "Library and program to read and write meta information in multimedia files",
+    "uri": "https://owl.phy.queensu.ca/~phil/exiftool/",
+
+    "sysreqs": [ "exiftool" ],
+
+    "dependencies": [
+
+	{ "packages": [ "libimage-exiftool-perl" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "packages": [ "perl-Image-ExifTool" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora" ]
+	},
+
+	{ "packages": [ "exiftool" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

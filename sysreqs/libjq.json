@@ -1,11 +1,30 @@
-
 {
-  "libjq": {
-    "sysreqs": "libjq",
-    "platforms": {
-      "DEB": "libjq-dev",
-      "RPM": "jq-devel",
-      "OSX/brew": "jq"
-    }
-  }
+    "name": "libjq",
+    "title": "Lightweight and flexible command-line JSON processor",
+    "uri": "https://github.com/stedolan/jq",
+
+    "sysreqs": [ "libjq" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libjq1" ],
+	  "buildtime-packages": [ "libjq-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libjq1" ],
+	  "buildtime-packages": [ "libjq-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8"
+	},
+
+	{ "runtime-packages": [ "jq" ],
+	  "buildtime-packages": [ "lijq-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	}
+    ]
 }

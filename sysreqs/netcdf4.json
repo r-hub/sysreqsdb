@@ -1,10 +1,73 @@
 {
-    "netcdf4": {
-	"sysreqs": "netcdf",
-	"platforms": {
-	    "DEB": "libnetcdf-dev",
-	    "OSX/brew": "netcdf",
-	    "RPM": "netcdf-devel"
-	}
-    }
+    "name": "netcdf4",
+    "title": "Scientific data access to large binary data",
+    "uri": "http://www.unidata.ucar.edu/software/netcdf/",
+
+    "sysreqs": [ "netcdf" ],
+
+    "dependencies": [
+	{ "runtime-packages": [ "libnetcdfc++4", "libnetcdfc7", "libnetcdff5",
+				"libcf0" ],
+	  "buildtime-packages": [ "libnetcdf-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "14.04",
+	  "before-version": "16.04"
+	},
+
+	{ "runtime-packages": [ "libnetcdf11" ],
+	  "buildtime-packages": [ "libnetcdf-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "16.04",
+	  "before-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libnetcdf13" ],
+	  "buildtime-packages": [ "libnetcdf-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04"
+	},
+
+	{ "runtime-packages": [ "libnetcdfc++4", "libnetcdfc7", "libnetcdff5",
+				"libcf0" ],
+	  "buildtime-packages": [ "libnetcdf-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
+	},
+
+	{ "runtime-packages": [ "libnetcdf11" ],
+	  "buildtime-packages": [ "libnetcdf-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+	
+	{ "runtime-packages": [ "libnetcdf13" ],
+	  "buildtime-packages": [ "libnetcdf-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
+	},
+
+	{ "runtime-packages": [ "netcdf" ],
+	  "buildtime-packages": [ "netcdf-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "netcdf" ],
+	  "os": "macos",
+	  "distributions" [ "brew" ]
+	},
+
+	{ "packages": [ "netcdf" ],
+	  "os": "windows",
+	  "distributions" [ "msys2" ]
+	}	  
+    ]
 }

@@ -1,8 +1,15 @@
 {
-  "saint-2.3.4": {
-    "sysreqs": "SAINT_v2.3.4",
-    "platforms": {
-      "DEB": "saint"      
-    }
-  }
+    "name": "saint",
+    "title": "Significance Analysis of INTeractome",
+    "uri": "http://saint-apms.sourceforge.net/Main.html",
+
+    "sysreqs": [ "SAINT" ],
+
+    "dependencies": [
+
+	{ "packages": [ "saint" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	}
+    ]
 }

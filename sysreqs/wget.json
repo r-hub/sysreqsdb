@@ -1,18 +1,20 @@
 {
-  "wget": {
-    "sysreqs": "wget",
-    "platforms": {
-      "DEB": "wget",
-      "RPM": "wget",
-      "OSX/brew": "wget",
-      "Windows": {
-        "32bit": [
-          "http://downloads.sourceforge.net/gnuwin32/wget-1.11.4-1-bin.zip"
-        ],
-        "64bit": [
-          "http://downloads.sourceforge.net/gnuwin32/wget-1.11.4-1-bin.zip"
-        ]
-      }
-    }
-  }
+    "name": "wget",
+    "title": "Retrieves files from the web",
+    "uri": "https://www.gnu.org/software/wget/",
+
+    "sysreqs": [ "wget" ],
+
+    "dependencies": [
+
+	{ "packages": [ "wget" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "wget" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	}
+    ]
 }

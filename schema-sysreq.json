@@ -1,0 +1,99 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://github.com/r-hub/sysreqsdb/schema.json",
+    "version": "2.0.0",
+    "title": "System Requirement",
+    "description": "System Requirement mapping for R packages",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+
+	"name": {
+	    "type": "string"
+	},
+
+	"title": {
+	    "type": "string"
+	},
+	
+	"description": {
+	    "type": "string"
+	},
+
+	"comment": {
+	    "type": "string"
+	},
+
+	"uri": {
+	    "type": "string"
+	},
+
+	"sysreqs": {
+	    "type": "array",
+	    "items": {
+		"type": "string"
+	    },
+	    "minItems": 1
+	},
+
+	"dependencies": {
+	    "type": "array",
+	    "items": {
+		"type": "object",
+		"required": [ "os" ],
+		"anyOf": [
+		    { "required": [ "runtime-packages" ] },
+		    { "required": [ "buildtime-packages" ] },
+		    { "required": [ "packages" ] },
+		    { "required": [ "script" ] }
+		],
+		"additionalProperties": false,
+		"properties": {
+
+		    "runtimes": {
+			"type": "array",
+			"items": {
+			    "type": "string"
+			}
+		    },
+
+		    "buildtimes": {
+			"type": "array",
+			"items": {
+			    "type": "string"
+			}
+		    },
+		    
+		    "os": {
+			"type": "string",
+			"enum": [
+			    "linux",
+			    "macos",
+			    "windows",
+			    "solaris"
+			]
+		    },
+
+		    "distributions": {
+			"type": "array",
+			"items": {
+			    "type": "string"
+			}
+		    },
+
+		    "from-version": {
+			"type": "string"
+		    },
+
+		    "before-version": {
+			"type": "string"
+		    }
+
+		}
+	    }
+	}
+
+    },
+
+    "required": [ "name", "title", "sysreqs", "dependencies" ]
+}

@@ -2,7 +2,7 @@
   "libgeos": {
     "sysreqs": "/\\bGEOS\\b/",
     "platforms": {
-      "DEB": "libgeos-dev",
+      "DEB": "libgeos-dev libgeos++-dev",
       "OSX/brew": "geos",
       "RPM": "geos-devel"
     }

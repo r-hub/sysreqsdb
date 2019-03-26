@@ -3,7 +3,7 @@
     "title": "Geospatial Data Abstraction Library",
     "uri": "http://www.gdal.org/",
 
-    "sysreqs": [ "source: GDAL" ],
+    "sysreqs": [ "GDAL" ],
 
     "dependencies": [
 

@@ -1,6 +1,6 @@
 {
   "libgdal": {
-    "sysreqs": "source: GDAL",
+    "sysreqs": "GDAL",
     "platforms": {
       "DEB": "libgdal-dev",
       "OSX/brew": "gdal",

@@ -7,34 +7,58 @@
 
     "dependencies": [
 
-	{ "runtime-packages": [ "libgeos-c1" ],
-	  "buildtime-packages": [ "libgeos-dev" ],
+	{ "runtime-packages": [ "libgeos-c1", "libgeos-3.4.2" ],
+	  "buildtime-packages": [ "libgeos-dev", "libgeos++-dev" ],
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
 	  "from-version": "14.04",
 	  "before-version": "16.04"
 	},
 
-	{ "runtime-packages": [ "libgeos-c1v5" ],
-	  "buildtime-packages": [ "libgeos-dev" ],
+	{ "runtime-packages": [ "libgeos-c1v5", "libgeos-3.5.0" ],
+	  "buildtime-packages": [ "libgeos-dev", "libgeos++-dev" ],
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
-	  "from-version": "16.04"
+	  "from-version": "16.04",
+	  "before-version": "18.04"
 	},
-	
-	{ "runtime-packages": [ "libgeos-c1" ],
-	  "buildtime-packages": [ "libgeos-dev" ],
+
+	{ "runtime-packages": [ "libgeos-c1v5", "libgeos-3.6.2" ],
+	  "buildtime-packages": [ "libgeos-dev", "libgeos++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "18.04",
+	  "before-version": "19.04"
+	},
+
+	{ "runtime-packages": [ "libgeos-c1v5", "libgeos-3.7.1" ],
+	  "buildtime-packages": [ "libgeos-dev", "libgeos++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "19.04"
+	},
+
+	{ "runtime-packages": [ "libgeos-c1", "libgeos-3.4.2" ],
+	  "buildtime-packages": [ "libgeos-dev", "libgeos++-dev" ],
 	  "os": "linux",
 	  "distributions": [ "debian" ],
 	  "from-version": "8",
 	  "before-version": "9"
 	},
 
-	{ "runtime-packages": [ "libgeos-c1v5" ],
-	  "buildtime-packages": [ "libgeos-dev" ],
+	{ "runtime-packages": [ "libgeos-c1v5", "libgeos-3.5.1" ],
+	  "buildtime-packages": [ "libgeos-dev", "libgeos++-dev" ],
 	  "os": "linux",
 	  "distributions": [ "debian" ],
-	  "from-version": "9"
+	  "from-version": "9",
+	  "before-version": "10"
+	},
+
+	{ "runtime-packages": [ "libgeos-c1v5", "libgeos-3.7.1" ],
+	  "buildtime-packages": [ "libgeos-dev", "libgeos++-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
 	},
 
 	{ "runtime-packages": [ "geos" ],

@@ -1,5 +1,5 @@
 {
-    "id": "linux-x86_64-debian-gcc",
+    "id": "linux-x86_64-debian-clang",
     "name": "DEB",
     "distribution": "Debian",
     "release": "buster",

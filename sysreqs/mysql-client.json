@@ -25,6 +25,7 @@
           "runtime": "libmariadb2"
         }
       ],
+      "PKGBUILD": "mariadb-clients",
       "OSX/brew": "mariadb-connector-c"
     }
   }

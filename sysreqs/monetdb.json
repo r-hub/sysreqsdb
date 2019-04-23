@@ -3,6 +3,7 @@
     "sysreqs": "monetdb",
     "platforms": {
        "DEB": "monetdb5-sql",
+      "PKGBUILD": "moneydb",
        "OSX/brew": "monetdb",
        "RPM": "MonetDB-SQL-server5 MonetDB-client"
     }

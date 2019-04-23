@@ -2,6 +2,7 @@
   "bayescan": {
     "sysreqs": "/Bayescan/",
     "platforms": {
+        "PKGBUILD": "bayescan"
     }
   }
 }

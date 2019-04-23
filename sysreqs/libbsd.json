@@ -3,6 +3,7 @@
     "sysreqs": "libbsd",
     "platforms": {
       "DEB": "libbsd-dev",
+      "PKGBUILD": "libbsd",
       "RPM": "libbsd-devel"
     }
   }

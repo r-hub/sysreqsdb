@@ -6,6 +6,7 @@
         "runtime": "libgmp10",
         "buildtime": "libgmp-dev"
       },
+      "PKGBUILD": "gmp",
       "OSX/brew": "gmp"
     }
   }

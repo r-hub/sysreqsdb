@@ -2,7 +2,8 @@
   "apparmor": {
     "sysreqs": "/apparmor/i",
     "platforms": {
-      "DEB": "libapparmor-dev"
+      "DEB": "libapparmor-dev",
+      "PKGBUILD": "apparmor"
     }
   }
 }

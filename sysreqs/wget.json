@@ -5,6 +5,7 @@
       "DEB": "wget",
       "RPM": "wget",
       "OSX/brew": "wget",
+      "PKGBUILD": "wget",
       "Windows": {
         "32bit": [
           "http://downloads.sourceforge.net/gnuwin32/wget-1.11.4-1-bin.zip"

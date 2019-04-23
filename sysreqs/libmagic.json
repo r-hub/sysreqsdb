@@ -3,6 +3,7 @@
     "sysreqs": "libmagic",
     "platforms": {
        "DEB": "libmagic-dev",
+       "PKGBUILD": "file",
        "OSX/brew": "libmagic",
        "RPM": "file-devel"
     }

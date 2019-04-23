@@ -3,6 +3,7 @@
     "sysreqs": "/\\blibtiff\\b/",
     "platforms": {
       "DEB": "libtiff-dev",
+      "PKGBUILD": "libtiff",
       "OSX/brew": "libtiff",
       "RPM": "libtiff-devel"
     }

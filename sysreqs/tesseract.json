@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": "libtesseract-dev libleptonica-dev tesseract-ocr-eng",
       "OSX/brew": "tesseract",
+      "PKGBUILD": "tesseract",
       "RPM": "tesseract-devel leptonica-devel"
     }
   }

@@ -3,6 +3,7 @@
     "sysreqs": "poppler",
     "platforms": {
       "DEB": "libpoppler-cpp-dev",
+      "PKGBUILD": "poppler",
       "OSX/brew": "poppler",
       "RPM": "poppler-cpp-devel"
     }

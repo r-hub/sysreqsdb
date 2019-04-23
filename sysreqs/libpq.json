@@ -3,6 +3,7 @@
     "sysreqs": "libpq",
     "platforms": {
       "DEB": "libpq-dev",
+      "PKGBUILD": "libpqxx",
       "OSX/brew": "libpq",
       "RPM": "postgresql-devel"
     }

@@ -3,6 +3,7 @@
     "sysreqs": "pari-gp",
     "platforms": {
        "DEB": "pari-gp",
+       "PKGBUILD": "pari",
        "OSX/brew": "pari",
        "RPM": "pari-gp"
     }

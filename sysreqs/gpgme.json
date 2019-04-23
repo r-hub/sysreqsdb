@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": "libgpgme11-dev haveged",
       "OSX/brew": "gpgme",
+      "PKGBUILD": "gpgme",
       "RPM": "gpgme-devel haveged"
     }
   }

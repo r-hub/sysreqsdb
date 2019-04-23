@@ -2,7 +2,8 @@
   "nvcc": {
     "sysreqs": "nvcc",
     "platforms": {
-      "DEB": "nvidia-cuda-toolkit"
+      "DEB": "nvidia-cuda-toolkit",
+      "PKGBUILD": "cuda"
     }
   }
 }

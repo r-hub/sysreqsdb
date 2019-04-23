@@ -3,7 +3,8 @@
     "sysreqs": "/FFmpeg/",
     "platforms": {
       "DEB": "ffmpeg",
-      "OSX/brew": "ffmpeg"
+      "OSX/brew": "ffmpeg",
+      "PKGBUILD": "ffmpeg"
     }
   }
 }

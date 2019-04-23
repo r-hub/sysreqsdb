@@ -4,7 +4,8 @@
     "platforms": {
       "DEB": "automake",
       "RPM": "automake",
-      "OSX/brew": "automake"
+      "OSX/brew": "automake",
+      "PKGBUILD": "automake"
     }
   }
 }

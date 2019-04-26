@@ -21,12 +21,12 @@
 
 	{ "packages": [ "db" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": "berkeley-db",
 	  "os": "macos",
-	  "distrobutions": [ "brew" ],
+	  "distrobutions": [ "brew" ]
 	}
     ]
 }

@@ -22,7 +22,7 @@
 
 	{ "packages": [ "atk" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "atk" ],

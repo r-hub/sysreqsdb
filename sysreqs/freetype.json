@@ -21,7 +21,7 @@
 
 	{ "packages": [ "freetype2" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "freetype" ],

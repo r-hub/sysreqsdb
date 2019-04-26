@@ -23,7 +23,7 @@
 
 	{ "packages": [ "jq" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "runtime-packages": [ "jq" ],

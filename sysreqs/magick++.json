@@ -69,7 +69,7 @@
 
 	{ "packages": [ "imagemagick" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "imagemagick@6" ],

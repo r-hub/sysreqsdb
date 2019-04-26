@@ -21,7 +21,7 @@
 
 	{ "packages": [ "libxml2" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ ],

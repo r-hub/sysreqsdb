@@ -16,7 +16,7 @@
 
 	{ "packages": [ "apparmor" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	}
 
     ]

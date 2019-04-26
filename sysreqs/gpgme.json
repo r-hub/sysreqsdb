@@ -21,7 +21,7 @@
 
 	{ "packages": [ "gpgme" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "gpgme" ],

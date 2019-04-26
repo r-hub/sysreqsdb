@@ -61,7 +61,7 @@
 
 	{ "packages": [ "hiredis" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "hiredis" ],

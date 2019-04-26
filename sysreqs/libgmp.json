@@ -21,7 +21,7 @@
 
 	{ "packages": [ "gmp" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "gmp" ],

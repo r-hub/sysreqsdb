@@ -45,7 +45,7 @@
 
 	{ "packages": [ "libpng" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "libpng" ],

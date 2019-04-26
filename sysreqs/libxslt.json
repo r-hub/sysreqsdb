@@ -21,7 +21,7 @@
 
 	{ "packages": [ "libxslt" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "libxslt" ],

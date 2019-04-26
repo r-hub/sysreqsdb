@@ -12,7 +12,7 @@
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
 	  "from-version": "14.04",
-	  "before-version" "16.04"
+	  "before-version": "16.04"
 	},
 
 	{ "runtime-packages": [ "libopenmpi1.10" ],
@@ -20,7 +20,7 @@
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
 	  "from-version": "16.04",
-	  "before-version" "18.04"
+	  "before-version": "18.04"
 	},
 
 	{ "runtime-packages": [ "libopenmpi2" ],
@@ -28,7 +28,7 @@
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
 	  "from-version": "18.04",
-	  "before-version" "18.10"
+	  "before-version": "18.10"
 	},
 
 	{ "runtime-packages": [ "libopenmpi3" ],
@@ -43,7 +43,7 @@
 	  "os": "linux",
 	  "distributions": [ "debian" ],
 	  "from-version": "8",
-	  "before-version" "9"
+	  "before-version": "9"
 	},
 
 	{ "runtime-packages": [ "libopenmpi2" ],
@@ -51,7 +51,7 @@
 	  "os": "linux",
 	  "distributions": [ "debian" ],
 	  "from-version": "9",
-	  "before-version" "10"
+	  "before-version": "10"
 	},
 
 	{ "runtime-packages": [ "libopenmpi3" ],
@@ -71,6 +71,7 @@
 	  "os": "linux",
 	  "distributions": [ "arch" ]
 	},
+
 
 	{ "packages": [ "openmpi" ],
 	  "os": "macos",

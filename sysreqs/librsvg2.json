@@ -21,7 +21,7 @@
 
 	{ "packages": [ "librsvg" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "librsvg" ],

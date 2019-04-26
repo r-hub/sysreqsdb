@@ -21,7 +21,7 @@
 	
 	{ "packages": [ "fftw" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "fftw" ],

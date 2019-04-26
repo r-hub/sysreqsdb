@@ -61,7 +61,7 @@
 
 	{ "packages": [ "gsl" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "gsl" ],

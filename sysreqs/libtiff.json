@@ -21,7 +21,7 @@
 	
 	{ "packages": [ "libtiff" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "libtiff" ],

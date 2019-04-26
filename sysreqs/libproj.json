@@ -69,7 +69,7 @@
 
 	{ "packages": [ "proj" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "proj" ],

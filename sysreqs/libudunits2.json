@@ -21,7 +21,7 @@
 
 	{ "packages": [ "udunits" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "runtime-packages": [ "udunits" ],

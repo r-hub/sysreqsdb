@@ -61,7 +61,7 @@
 
 	{ "packages": [ "hdf5" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "hdf5" ],

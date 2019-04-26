@@ -9,7 +9,7 @@
 
 	{ "packages": [ "monetdb" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "monetdb" ],

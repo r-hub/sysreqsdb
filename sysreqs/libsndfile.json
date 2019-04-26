@@ -21,7 +21,7 @@
 
 	{ "packages": [ "libsndfile" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "libsndfile" ],

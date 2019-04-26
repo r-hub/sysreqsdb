@@ -13,7 +13,7 @@
 
 	{ "packages": [ "imagej" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "imagej" ],

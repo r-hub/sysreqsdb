@@ -19,7 +19,7 @@
 
 	{ "packages": [ "perl-image-exiftool" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "exiftool" ],

@@ -21,7 +21,7 @@
 	
 	{ "packages": [ "gtk2" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "gtk+" ],

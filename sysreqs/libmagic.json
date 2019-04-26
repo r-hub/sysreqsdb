@@ -21,7 +21,7 @@
 
 	{ "packages": [ "file" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "libmagic " ],

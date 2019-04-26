@@ -54,7 +54,7 @@
 	
 	{ "packages": [ "gdal" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "gdal" ],

@@ -21,7 +21,7 @@
 	
 	{ "packages": [ "glu" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ ],

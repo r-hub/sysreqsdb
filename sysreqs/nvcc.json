@@ -14,7 +14,7 @@
 
 	{ "packages": [ "cuda" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	}
     ]
 }

@@ -20,7 +20,7 @@
 
 	{ "packages": [ "mysql56" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "mysql-server", "mysql" ],

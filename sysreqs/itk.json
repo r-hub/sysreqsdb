@@ -61,7 +61,7 @@
 
 	{ "packages": [ "insight-toolkit" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distributions": [ "arch" ]
 	},
 
 	{ "packages": [ "insighttoolkit" ],

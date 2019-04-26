@@ -35,7 +35,7 @@
 
 	{ "packages": [ "jre-openjdk-headless" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "java-1.8.0-openjdk" ],

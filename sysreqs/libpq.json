@@ -26,7 +26,7 @@
 
 	{ "packages": [ "libpqxx" ],
 	  "os": "linux",
-	  "distributions" [ "arch" ]
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "libpq" ],

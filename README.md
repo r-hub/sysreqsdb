@@ -29,6 +29,9 @@ Distributions using `deb` package format:
 * Ubuntu Linux
 * Debian Linux
 
+Distributions using the `PKGBUILD` package format:
+* Arch Linux
+
 Distributions using `rpm` package format:
 * Fedora Linux (recent releases)
 * RedHat and CentOS Linux (recent releases)

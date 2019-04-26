@@ -12,6 +12,11 @@
 	},
 
 	{ "packages": [ "jags" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "jags" ],
 	  "os": "macos",
 	  "distribution": [ "brew" ]
 	},

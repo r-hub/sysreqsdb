@@ -21,6 +21,11 @@
 	},
 
 	{ "packages": [ "atk" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "atk" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

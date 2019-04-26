@@ -1,6 +1,6 @@
 {
     "name": "libarchive",
-    "title": "Multi-format archive and compression library"
+    "title": "Multi-format archive and compression library",
     "url": "https://www.libarchive.org/",
 
     "sysreqs": [ "libarchive" ],
@@ -17,6 +17,11 @@
 	  "buildtime-packages": [ "libarchive-devel" ],
 	  "os": "linux",
 	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libarchive" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
 	},
 
 	{ "packages": [ "libarchive " ],

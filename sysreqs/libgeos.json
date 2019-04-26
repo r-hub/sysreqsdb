@@ -67,9 +67,14 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "" ],
+	  "os": "linux",
+	  "distrubtions": [ "geos" ]
+	},
+
 	{ "packages": [ "geos" ],
 	  "os": "macos",
-	  "distributions" [ "brew" ]
+	  "distrubtions": [ "brew" ]
 	}
     ]
 }

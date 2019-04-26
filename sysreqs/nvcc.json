@@ -10,6 +10,11 @@
 	{ "packages": [ "nvidia-cuda-toolkit" ],
 	  "os": "linux",
 	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "cuda" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
 	}
     ]
 }

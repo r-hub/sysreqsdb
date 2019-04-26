@@ -60,6 +60,11 @@
 	},
 
 	{ "packages": [ "hdf5" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "hdf5" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

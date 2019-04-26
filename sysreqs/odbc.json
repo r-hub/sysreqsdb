@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "unixodbc" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "unixodbc" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

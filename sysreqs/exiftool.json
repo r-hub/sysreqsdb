@@ -17,6 +17,11 @@
 	  "distributions": [ "centos", "fedora" ]
 	},
 
+	{ "packages": [ "perl-image-exiftool" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "packages": [ "exiftool" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

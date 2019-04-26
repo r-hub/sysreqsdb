@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "gpgme" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "gpgme" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

@@ -8,6 +8,11 @@
     "dependencies": [
 
 	{ "packages": [ "monetdb" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "monetdb" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

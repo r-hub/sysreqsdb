@@ -19,6 +19,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "udunits" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
 	{ "runtime-packages": [ "udunits" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

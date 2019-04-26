@@ -59,6 +59,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "insight-toolkit" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "packages": [ "insighttoolkit" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

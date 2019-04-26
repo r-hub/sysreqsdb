@@ -19,9 +19,14 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "db" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
 	{ "packages": "berkeley-db",
 	  "os": "macos",
-	  "distrobutions": [ "brew" ],
+	  "distrobutions": [ "brew" ]
 	}
     ]
 }

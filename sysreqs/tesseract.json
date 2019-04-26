@@ -52,6 +52,11 @@
 	},
 
 	{ "packages": [ "tesseract" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "tesseract" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

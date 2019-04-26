@@ -61,13 +61,18 @@
 	},
 
 	{ "packages": [ "netcdf" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "netcdf" ],
 	  "os": "macos",
-	  "distributions" [ "brew" ]
+	  "distrubtions": [ "brew" ]
 	},
 
 	{ "packages": [ "netcdf" ],
 	  "os": "windows",
-	  "distributions" [ "msys2" ]
+	  "distrubtions": [ "msys2" ]
 	}	  
     ]
 }

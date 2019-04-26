@@ -17,6 +17,12 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "pkgconf" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+
 	{ "packages": [ "pkg-config" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

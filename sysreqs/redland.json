@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "redland" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "redland" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

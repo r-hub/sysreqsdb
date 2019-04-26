@@ -53,6 +53,11 @@
 	},
 	
 	{ "packages": [ "gdal" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "gdal" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

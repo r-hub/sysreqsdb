@@ -13,6 +13,11 @@
 	},
 
 	{ "packages": [ "rust" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "rust" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

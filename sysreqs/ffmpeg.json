@@ -5,23 +5,23 @@
 
     "sysreqs": [ "FFmpeg" ],
 
-    "dependencies" [
+    "dependencies": [
 
 	{ "packages": [ "ffmpeg" ],
 	  "os": "linux",
-	  "distributions": [ "debian", "ubuntu" ]
+	  "distributions": [ "arch", "debian", "ubuntu" ]
 	},
 
 	{ "runtime-packages": [ "ffmpeg", "ffmpeg-libs" ],
 	  "buildtime-packages": [ "ffmpeg-devel" ],
 	  "os": "linux",
 	  "distributions": [ "centos", "fedora", "redhat" ]
-	}
+	},
 
 	{ "packages": [ "ffmpeg" ],
 	  "os": "macos",
-	  "distributions": [ "brew" ],
-	}
+	  "distributions": [ "brew" ]
+	},
 
 	{ "packages": [ "ffmpeg" ],
 	  "os": "windows",

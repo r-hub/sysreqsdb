@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "libssh2" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "libssh2" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

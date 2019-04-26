@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "v8" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "v8" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

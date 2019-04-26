@@ -21,6 +21,11 @@
 	  "from-version": "8"
 	},
 
+	{ "packages": [ "jq" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
 	{ "runtime-packages": [ "jq" ],
 	  "buildtime-packages": [ "lijq-devel" ],
 	  "os": "linux",

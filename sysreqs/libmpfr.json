@@ -44,6 +44,11 @@
 	},
 
 	{ "packages": [ "mpfr" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "mpfr" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

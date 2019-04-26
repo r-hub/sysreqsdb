@@ -50,6 +50,11 @@
 	},
 
 	{ "packages": [ "openssl" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "openssl" ],
 	  "os": "windows",
 	  "distributions": [ "msys2" ]
 	}

@@ -33,6 +33,11 @@
 	  "from-version": "9"
 	},
 
+	{ "packages": [ "jre-openjdk-headless" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
 	{ "packages": [ "java-1.8.0-openjdk" ],
 	  "os": "linux",
 	  "distributions": [ "centos", "fedora", "redhat" ]

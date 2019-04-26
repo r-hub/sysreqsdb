@@ -60,6 +60,11 @@
 	},
 
 	{ "packages": [ "gsl" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "gsl" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

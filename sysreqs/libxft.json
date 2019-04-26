@@ -8,15 +8,21 @@
     "dependencies": [
 
 	{ "runtime-packages": [ "libxft2" ],
-	  "buildtime-packages" [ "libxft2-dev" ],
+	  "buildtime-packages": [ "libxft2-dev" ],
 	  "os": "linux",
 	  "distributions": [ "debian", "ubuntu" ]
 	},
 
 	{ "runtime-packages": [ "libXft" ],
-	  "buildtime-packages" [ "libXft-devel" ],
+	  "buildtime-packages": [ "libXft-devel" ],
 	  "os": "linux",
 	  "distributions": [ "debian", "ubuntu" ]
 	},
+
+	{ "packages": [ "libxft" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	}
+
     ]
 }

@@ -43,6 +43,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "popper" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "packages": [ "poppler" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

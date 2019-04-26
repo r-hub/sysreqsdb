@@ -67,6 +67,11 @@
 	  "distribution": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "gst-libav" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
 	{ "packages": [ "libav" ],
 	  "os": "macos",
 	  "distribution": [ "brew" ]

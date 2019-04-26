@@ -44,6 +44,11 @@
 	},
 
 	{ "packages": [ "libpng" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "libpng" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

@@ -8,7 +8,8 @@
     "dependencies": [
 
 	{ "packages": [ "bwidget" ],
-	  "os": "linux"
+	  "os": "linux",
+	  "distributions": [ "arch" ]
 	},
 	
 	{ "packages": [ "bwidget" ],

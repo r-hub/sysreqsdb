@@ -1,6 +1,6 @@
 {
     "name": "mongodb",
-    "title" "Object/document-oriented database",
+    "title": "Object/document-oriented database",
     "uri": "https://www.mongodb.org/",
 
     "sysreqs": [ "mongodb" ],
@@ -9,7 +9,7 @@
 
 	{ "packages": [ "mongodb" ],
 	  "os": "linux",
-	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]	  
+	  "distributions": [ "arch", "debian", "ubuntu", "centos", "fedora", "redhat" ]	  
 	},
 
 	{ "packages": [ "mongodb" ],

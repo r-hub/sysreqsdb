@@ -68,6 +68,11 @@
 	},
 
 	{ "packages": [ "proj" ],
+	  "os": "linux",
+	  "distrubtions": [ "arch" ]
+	},
+
+	{ "packages": [ "proj" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

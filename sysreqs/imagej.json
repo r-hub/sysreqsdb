@@ -12,6 +12,11 @@
 	},
 
 	{ "packages": [ "imagej" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "imagej" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

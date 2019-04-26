@@ -9,7 +9,7 @@
 
 	{ "packages": [ "bowtie2" ],
 	  "os": "linux",
-	  "distributions": [ "debian", "ubuntu" ]
+	  "distributions": [ "arch", "debian", "ubuntu" ]
 	},
 
 	{ "packages": [ "homebrew/science/bowtie2" ],

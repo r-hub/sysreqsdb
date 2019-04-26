@@ -60,6 +60,11 @@
 	},
 
 	{ "packages": [ "hiredis" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "hiredis" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

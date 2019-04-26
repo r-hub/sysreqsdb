@@ -20,6 +20,11 @@
 	},
 	
 	{ "packages": [ "fftw" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "fftw" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

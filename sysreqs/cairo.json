@@ -23,6 +23,11 @@
 	},
 
 	{ "packages": [ "cairo" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "cairo" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

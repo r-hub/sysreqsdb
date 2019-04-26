@@ -67,6 +67,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "openmp" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "packages": [ "openmpi" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

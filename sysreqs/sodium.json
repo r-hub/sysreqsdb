@@ -44,6 +44,11 @@
 	},
 
 	{ "packages": [ "libsodium" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "libsodium" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

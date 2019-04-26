@@ -67,6 +67,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "imagemagick" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ "imagemagick@6" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

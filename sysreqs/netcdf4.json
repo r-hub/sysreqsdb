@@ -61,6 +61,11 @@
 	},
 
 	{ "packages": [ "netcdf" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "netcdf" ],
 	  "os": "macos",
 	  "distributions" [ "brew" ]
 	},

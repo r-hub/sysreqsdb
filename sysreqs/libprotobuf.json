@@ -67,6 +67,11 @@
 	  "distribution": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "protobuf" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "runtime-packages" [ "protobuf" ],
 	  "os": "macos",
 	  "distribution": [ "brew" ]

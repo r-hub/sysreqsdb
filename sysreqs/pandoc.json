@@ -10,7 +10,7 @@
 
 	{ "packages": [ "pandoc", "pandoc-citeproc" ],
 	  "os": "linux",
-	  "distributions": [ "debian", "ubuntu", "centos", "fedora", "redhat" ]
+	  "distributions": [ "arch", "debian", "ubuntu", "centos", "fedora", "redhat" ]
 	},
 	
 	{ "packages": [ "pandoc", "pandoc-citeproc" ],

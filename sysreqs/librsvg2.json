@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "librsvg" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "librsvg" ],
 	  "os": "macos",
 	  "distribution": [ "brew" ]
 	}

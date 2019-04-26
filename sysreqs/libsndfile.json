@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "libsndfile" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "libsndfile" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

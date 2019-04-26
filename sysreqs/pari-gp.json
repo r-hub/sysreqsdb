@@ -18,6 +18,11 @@
 	},
 
 	{ "packages": [ "pari" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "pari" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

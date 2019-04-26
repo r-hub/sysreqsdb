@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "gmp" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "gmp" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

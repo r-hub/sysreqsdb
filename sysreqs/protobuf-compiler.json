@@ -68,6 +68,11 @@
 	},
 
 	{ "packages": [ "protobuf" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "protobuf" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

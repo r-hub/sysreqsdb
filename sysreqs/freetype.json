@@ -19,6 +19,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "freetype2" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ "freetype" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

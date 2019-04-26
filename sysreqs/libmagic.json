@@ -19,6 +19,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "file" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ "libmagic " ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

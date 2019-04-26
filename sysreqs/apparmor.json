@@ -12,6 +12,12 @@
 	  "buildtime-packages": [ "libapparmor-dev" ],
 	  "os": "linux",
 	  "distributions": [ "debian", "ubuntu" ]
+	},
+
+	{ "packages": [ "apparmor" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
 	}
+
     ]
 }

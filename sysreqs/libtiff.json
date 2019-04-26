@@ -20,6 +20,11 @@
 	},
 	
 	{ "packages": [ "libtiff" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "libtiff" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	},

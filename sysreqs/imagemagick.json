@@ -10,7 +10,7 @@
 
 	{ "packages": [ "imagemagick" ],
 	  "os": "linux",
-	  "distributions": [ "debian", "ubuntu" ]
+	  "distributions": [ "arch", "debian", "ubuntu" ]
 	},
 
 	{ "packages": [ "ImageMagick" ],

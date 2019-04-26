@@ -18,5 +18,11 @@
 	  "os": "linux",
 	  "distributions": [ "debian", "ubuntu" ]
 	},
+
+	{ "packages": [ "libxft" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	}
+
     ]
 }

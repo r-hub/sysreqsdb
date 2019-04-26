@@ -19,6 +19,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "libarchive" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ "libarchive " ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

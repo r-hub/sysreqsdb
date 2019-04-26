@@ -19,6 +19,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 	
+	{ "packages": [ "mesa" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "packages": [ ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

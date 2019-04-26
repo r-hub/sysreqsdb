@@ -35,6 +35,11 @@
 	  "distribution": [ "debian", "ubuntu" ],
 	},
 
+	{ "packages": [ "mariadb-clients" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ "mariadb-connector-c" ],
 	  "os": "macos",
 	  "distribution": [ "brew" ]

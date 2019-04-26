@@ -43,6 +43,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "libwebp" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "packages": [ "webp" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

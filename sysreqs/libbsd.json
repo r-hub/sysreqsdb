@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "libbsd" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "libbsd" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

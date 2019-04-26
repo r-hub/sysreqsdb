@@ -14,7 +14,7 @@
 	  
 	{ "packages": [ "tktable" ],
 	  "os": "linux",
-	  "distributions": [ "centos", "fedora", "redhat" ]
+	  "distributions": [ "arch", "centos", "fedora", "redhat" ]
 	}
     ]
 }

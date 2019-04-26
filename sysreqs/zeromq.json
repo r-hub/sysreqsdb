@@ -37,6 +37,11 @@
 	  "from-version": "9"
 	},
 
+	{ "packages": [ "zeromq" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "runtime-packages": [ "zeromq" ],
 	  "buildtime-packages": [ "zeromq-devel" ],
 	  "os": "linux",

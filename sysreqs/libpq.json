@@ -24,6 +24,11 @@
 	  "distributions": [ "brew" ]
 	},
 
+	{ "packages": [ "libpqxx" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ "libpq" ],
 	  "os": "windows",
 	  "distributions": [ "msys2" ]

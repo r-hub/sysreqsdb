@@ -14,7 +14,7 @@
 
 	{ "packages": [ "gdal" ],
 	  "os": "linux",
-	  "distributions": [ "centos", "fedora", "redhat" ]
+	  "distributions": [ "arch", "centos", "fedora", "redhat" ]
 	},
 
 	{ "packages": [ "gdal" ],

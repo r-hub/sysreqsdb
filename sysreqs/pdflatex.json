@@ -15,6 +15,11 @@
 	{ "packages": [ "texlive-collection-basic" ],
 	  "os": "linux",
 	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "texlive-core" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
 	}
     ]
 }

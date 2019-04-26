@@ -9,7 +9,7 @@
 
 	{ "packages": [ "ffmpeg" ],
 	  "os": "linux",
-	  "distributions": [ "debian", "ubuntu" ]
+	  "distributions": [ "arch", "debian", "ubuntu" ]
 	},
 
 	{ "runtime-packages": [ "ffmpeg", "ffmpeg-libs" ],

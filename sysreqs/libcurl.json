@@ -43,6 +43,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "curl" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ ],
 	  "os": "linux",
 	  "distributions": [ "brew" ]

@@ -19,6 +19,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 	
+	{ "packages": [ "glu" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
 	{ "packages": [ ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

@@ -18,6 +18,11 @@
 	},
 
 	{ "packages": [ "protobuf" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
+	{ "packages": [ "protobuf" ],
 	  "os": "windows",
 	  "distributions": [ "msys2" ]
 	}

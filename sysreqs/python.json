@@ -25,6 +25,11 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
+	{ "packages": [ "python2" ],
+	  "os": "linux",
+	  "distributions": [ "arch" ]
+	},
+
 	{ "packages": [ ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]

@@ -20,6 +20,11 @@
 	},
 
 	{ "packages": [ "libxslt" ],
+	  "os": "linux",
+	  "distributions" [ "arch" ]
+	},
+
+	{ "packages": [ "libxslt" ],
 	  "os": [ "macos" ],
 	  "distributions": [ "brew" ]
 	}

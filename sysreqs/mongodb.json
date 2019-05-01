@@ -1,6 +1,6 @@
 {
     "name": "mongodb",
-    "title" "Object/document-oriented database",
+    "title": "Object/document-oriented database",
     "uri": "https://www.mongodb.org/",
 
     "sysreqs": [ "mongodb" ],

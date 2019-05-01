@@ -69,7 +69,7 @@
 
 	{ "packages": [ "geos" ],
 	  "os": "macos",
-	  "distributions" [ "brew" ]
+	  "distributions": [ "brew" ]
 	}
     ]
 }

@@ -1,6 +1,6 @@
 {
     "name": "libprotobuf",
-    "title" "Protocol buffers C++ library",
+    "title": "Protocol buffers C++ library",
     "uri": "https://github.com/protocolbuffers/protobuf",
 
     "sysreqs": [ "libprotobuf" ],
@@ -67,12 +67,12 @@
 	  "distribution": [ "centos", "fedora", "redhat" ]
 	},
 
-	{ "runtime-packages" [ "protobuf" ],
+	{ "runtime-packages": [ "protobuf" ],
 	  "os": "macos",
 	  "distribution": [ "brew" ]
 	},
 
-	{ "runtime-packages" [ "protobuf" ],
+	{ "runtime-packages": [ "protobuf" ],
 	  "os": "windows",
 	  "distribution": [ "msys2" ]
 	}

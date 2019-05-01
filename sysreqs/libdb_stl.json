@@ -21,7 +21,7 @@
 
 	{ "packages": "berkeley-db",
 	  "os": "macos",
-	  "distrobutions": [ "brew" ],
+	  "distributions": [ "brew" ]
 	}
     ]
 }

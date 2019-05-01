@@ -1,7 +1,7 @@
 {
     "name": "imagemagick",
     "title": "ImageMagick",
-    "description": "Image manipulation programs"
+    "description": "Image manipulation programs",
     "uri": "https://www.imagemagick.org/",
 
     "sysreqs": [ "/Image[ ]?Magick/i" ],

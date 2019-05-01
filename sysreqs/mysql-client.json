@@ -32,7 +32,7 @@
 	{ "buildtime": [ "libmariadb-client-lgpl-dev" ],
 	  "runtime": [ "libmariadb2" ],
 	  "os": "linux",
-	  "distribution": [ "debian", "ubuntu" ],
+	  "distribution": [ "debian", "ubuntu" ]
 	},
 
 	{ "packages": [ "mariadb-connector-c" ],

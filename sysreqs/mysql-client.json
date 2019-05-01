@@ -12,37 +12,36 @@
 
     "dependencies": [
 
-	{ "runtime": [ "libmysqlclient18" ],
-	  "buildtime": [ "libmysqlclient-dev" ],
+	{ "runtime-packages": [ "libmysqlclient18" ],
+	  "buildtime-packages": [ "libmysqlclient-dev" ],
 	  "os": "linux",
-	  "distribution": [ "ubuntu" ],
-	  "min_version": "12.04",
-	  "max_version": "14.10"
+	  "distributions": [ "ubuntu" ],
+	  "from-version": "12.04",
+	  "before-version": "16.04"
 	},
 
-	{ "runtime": [ "libmysqlclient18" ],
-	  "buildtime": [ "libmysqlclient-dev" ],
+	{ "runtime-packages": [ "libmysqlclient18" ],
+	  "buildtime-packages": [ "libmysqlclient-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian" ],
-	  "min_version": "6.0",
-	  "max_version": "8",
-	  "run_time": true
+	  "distributions": [ "debian" ],
+	  "from-version": "6.0",
+	  "before-version": "9"
 	},
 
-	{ "buildtime": [ "libmariadb-client-lgpl-dev" ],
-	  "runtime": [ "libmariadb2" ],
+	{ "buildtime-packages": [ "libmariadb-client-lgpl-dev" ],
+	  "runtime-packages": [ "libmariadb2" ],
 	  "os": "linux",
-	  "distribution": [ "debian", "ubuntu" ]
+	  "distributions": [ "debian", "ubuntu" ]
 	},
 
 	{ "packages": [ "mariadb-connector-c" ],
 	  "os": "macos",
-	  "distribution": [ "brew" ]
+	  "distributions": [ "brew" ]
 	},
 
 	{ "packages": [ "libmariadbclient" ],
 	  "os": "windows",
-	  "distribution": [ "msys2" ]
+	  "distributions": [ "msys2" ]
 	}
     ]
 }

@@ -5,7 +5,7 @@
 
     "sysreqs": [ "\\bfreetype\\b/i" ],
 
-    "dependepncies": [
+    "dependencies": [
 
 	{ "runtime-packages": [ "libfreetype6" ],
 	  "buildtime-packages": [ "libfreetype6-dev" ],

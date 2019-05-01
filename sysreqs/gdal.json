@@ -19,7 +19,7 @@
 
 	{ "packages": [ "gdal" ],
 	  "os": "macos",
-	  "distributions": "brew"
+	  "distributions": [ "brew" ]
 	}
     ]
 }

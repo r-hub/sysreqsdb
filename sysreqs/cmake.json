@@ -3,7 +3,7 @@
     "title": "Cross-platform, open-source make system",
     "uri": "https://cmake.org/",
 
-    "sysreqs": "cmake",
+    "sysreqs": [ "cmake" ],
 
     "dependencies": [
 

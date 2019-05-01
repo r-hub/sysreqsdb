@@ -3,7 +3,7 @@
     "title": "Hierarchical Data Format 5 (HDF5)",
     "uri": "http://hdfgroup.org/HDF5/",
 
-    "sysreqs": "hdf5",
+    "sysreqs": [ "hdf5" ],
 
     "dependencies": [
 

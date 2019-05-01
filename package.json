@@ -4,8 +4,9 @@
   "description": "System requirements for R packages",
   "devDependencies": {
     "grunt": "^0.4.3",
+    "grunt-cli": "^0.1.13",
     "grunt-jsonlint": "^1.0.4",
-    "grunt-cli": "^0.1.13"
+    "grunt-tv4": "^2.1.0"
   },
   "scripts": {
     "test": "grunt travis --verbose"

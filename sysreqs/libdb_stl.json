@@ -19,7 +19,7 @@
 	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
-	{ "packages": "berkeley-db",
+	{ "packages": [ "berkeley-db" ],
 	  "os": "macos",
 	  "distributions": [ "brew" ]
 	}

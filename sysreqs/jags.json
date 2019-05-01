@@ -13,12 +13,12 @@
 
 	{ "packages": [ "jags" ],
 	  "os": "macos",
-	  "distribution": [ "brew" ]
+	  "distributions": [ "brew" ]
 	},
 
 	{ "packages": [ "jags" ],
 	  "os": "windows",
-	  "distribution": [ "msys2" ]
+	  "distributions": [ "msys2" ]
 	}	
     ]
 }

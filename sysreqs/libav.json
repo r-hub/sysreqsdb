@@ -11,65 +11,65 @@
 	  "buildtime-packages": [ "libavutil-dev" ],
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
-	  "from_version": "14.04",
-	  "before_version": "16.04"
+	  "from-version": "14.04",
+	  "before-version": "16.04"
 	},
 	
 	{ "runtime-packages": [ "libavutil-ffmpeg54" ],
 	  "buildtime-packages": [ "libavutil-dev" ],
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
-	  "from_version": "16.04",
-	  "before_version": "18.04"
+	  "from-version": "16.04",
+	  "before-version": "18.04"
 	},
 
 	{ "runtime-packages": [ "libavutil55" ],
 	  "buildtime-packages": [ "libavutil-dev" ],
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
-	  "from_version": "18.04",
-	  "before_version": "18.10"
+	  "from-version": "18.04",
+	  "before-version": "18.10"
 	},
 
 	{ "runtime-packages": [ "libavutil56" ],
 	  "buildtime-packages": [ "libavutil-dev" ],
 	  "os": "linux",
 	  "distributions": [ "ubuntu" ],
-	  "from_version": "18.10"
+	  "from-version": "18.10"
 	},
 
 	{ "runtime-packages": [ "libavutil54" ],
 	  "buildtime-packages": [ "libavutil-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian" ],
-	  "from_version": "8",
-	  "before_version": "9"
+	  "distributions": [ "debian" ],
+	  "from-version": "8",
+	  "before-version": "9"
 	},
 
 	{ "runtime-packages": [ "libavutil55" ],
 	  "buildtime-packages": [ "libavutil-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian" ],
-	  "from_version": "9",
-	  "before_version": "10"
+	  "distributions": [ "debian" ],
+	  "from-version": "9",
+	  "before-version": "10"
 	},
 
 	{ "runtime-packages": [ "libavutil56" ],
 	  "buildtime-packages": [ "libavutil-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian" ],
-	  "from_version": "10"
+	  "distributions": [ "debian" ],
+	  "from-version": "10"
 	},
 
 	{ "runtime-packages": [ "ffmpeg-libs" ],
 	  "buildtime-packages": [ "ffmpeg-libs-devel" ],
 	  "os": "linux",
-	  "distribution": [ "centos", "fedora", "redhat" ]
+	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
 	{ "packages": [ "libav" ],
 	  "os": "macos",
-	  "distribution": [ "brew" ]
+	  "distributions": [ "brew" ]
 	}
     ]
 }

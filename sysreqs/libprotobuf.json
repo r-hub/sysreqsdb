@@ -10,7 +10,7 @@
 	{ "runtime-packages": [ "libprotobuf8" ],
 	  "buildtime-packages": [ "libprotobuf-dev" ],
 	  "os": "linux",
-	  "distribution": [ "ubuntu" ],
+	  "distributions": [ "ubuntu" ],
 	  "from-version": "14.04",
 	  "before-version": "16.04"
 	},
@@ -18,7 +18,7 @@
 	{ "runtime-packages": [ "libprotobuf9v5" ],
 	  "buildtime-packages": [ "libprotobuf-dev" ],
 	  "os": "linux",
-	  "distribution": [ "ubuntu" ],
+	  "distributions": [ "ubuntu" ],
 	  "from-version": "16.04",
 	  "before-version": "18.04"
 	},
@@ -26,7 +26,7 @@
 	{ "runtime-packages": [ "libprotobuf10" ],
 	  "buildtime-packages": [ "libprotobuf-dev" ],
 	  "os": "linux",
-	  "distribution": [ "ubuntu" ],
+	  "distributions": [ "ubuntu" ],
 	  "from-version": "18.04",
 	  "before-version": "19.04"
 	},
@@ -34,14 +34,14 @@
 	{ "runtime-packages": [ "libprotobuf17" ],
 	  "buildtime-packages": [ "libprotobuf-dev" ],
 	  "os": "linux",
-	  "distribution": [ "ubuntu" ],
+	  "distributions": [ "ubuntu" ],
 	  "from-version": "19.04"
 	},
 	
     	{ "runtime-packages": [ "libprotobuf9" ],
 	  "buildtime-packages": [ "libprotobuf-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian" ],
+	  "distributions": [ "debian" ],
 	  "from-version": "8",
 	  "before-version": "9"
 	},
@@ -49,7 +49,7 @@
     	{ "runtime-packages": [ "libprotobuf10" ],
 	  "buildtime-packages": [ "libprotobuf-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian" ],
+	  "distributions": [ "debian" ],
 	  "from-version": "9",
 	  "before-version": "10"
 	},
@@ -57,24 +57,24 @@
     	{ "runtime-packages": [ "libprotobuf17" ],
 	  "buildtime-packages": [ "libprotobuf-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian" ],
+	  "distributions": [ "debian" ],
 	  "from-version": "10"
 	},
 
 	{ "runtime-packages": [ "protobuf" ],
 	  "buildtime-packages": [ "protobuf-devel" ],
 	  "os": "linux",
-	  "distribution": [ "centos", "fedora", "redhat" ]
+	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
 	{ "runtime-packages": [ "protobuf" ],
 	  "os": "macos",
-	  "distribution": [ "brew" ]
+	  "distributions": [ "brew" ]
 	},
 
 	{ "runtime-packages": [ "protobuf" ],
 	  "os": "windows",
-	  "distribution": [ "msys2" ]
+	  "distributions": [ "msys2" ]
 	}
     ]
 }

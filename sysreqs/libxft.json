@@ -3,7 +3,7 @@
     "title": "FreeType-based font drawing library for X",
     "uri": "",
     
-    "sysreqs": "Xft",
+    "sysreqs": [ "Xft" ],
 
     "dependencies": [
 

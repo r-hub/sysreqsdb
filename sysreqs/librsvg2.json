@@ -10,18 +10,18 @@
 	{ "runtime-packages": [ "librsvg2-2" ],
 	  "buildtime-packages": [ "librsvg2-dev" ],
 	  "os": "linux",
-	  "distribution": [ "debian", "ubuntu" ]
+	  "distributions": [ "debian", "ubuntu" ]
 	},
 
 	{ "runtime-packages": [ "librsvg2" ],
 	  "buildtime-packages": [ "librsvg2-devel" ],
 	  "os": "linux",
-	  "distribution": [ "centos", "fedora", "redhat" ]
+	  "distributions": [ "centos", "fedora", "redhat" ]
 	},
 
 	{ "packages": [ "librsvg" ],
 	  "os": "macos",
-	  "distribution": [ "brew" ]
+	  "distributions": [ "brew" ]
 	}
     ]
 }

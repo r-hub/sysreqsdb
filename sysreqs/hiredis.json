@@ -3,7 +3,7 @@
     "title": "Minimalistic C client library for Redis",
     "uri": "https://github.com/redis/hiredis",
 
-    "sysreqs": "hiredis",
+    "sysreqs": [ "hiredis" ],
 
     "dependencies": [
 

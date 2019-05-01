@@ -1,0 +1,7 @@
+{
+    "id": "linux-x86_64-debian-clang",
+    "name": "DEB",
+    "distribution": "Debian",
+    "release": "buster",
+    "install-commands": "export DEBIAN_FRONTEND=noninteractive; apt-get -y update && apt-get install -y ${sysreqs}"
+}

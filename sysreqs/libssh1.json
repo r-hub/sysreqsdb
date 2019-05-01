@@ -1,0 +1,33 @@
+{
+    "name": "libssh",
+    "title": "",
+    "uri": "",
+
+    "sysreqs": [ "/libssh\\b/i" ],
+
+    "dependencies": [
+
+	{ "runtime-packages": [ "libssh-4" ],
+	  "buildtime-packages": [ "libssh-dev" ],
+	  "os": "linux",
+	  "distributions": [ "debian", "ubuntu" ]
+	},
+	
+	{ "runtime-packages": [ "libssh2" ],
+	  "buildtime-packages": [ "libssh2-devel" ],
+	  "os": "linux",
+	  "distributions": [ "centos", "fedora", "redhat" ]
+	},
+
+	{ "packages": [ "libssh2" ],
+	  "os": "macos",
+	  "distributions": [ "brew" ]
+	},
+
+	{ "packages": [ "libssh2" ],
+	  "os": "windows",
+	  "distributions": [ "msys2" ]
+	}	
+    ]
+}
+    

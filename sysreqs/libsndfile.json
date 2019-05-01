@@ -3,6 +3,7 @@
     "sysreqs": "libsndfile",
     "platforms": {
        "DEB": "libsndfile1-dev",
+       "PKGBUILD": "libsndfile",
        "OSX/brew": "libsndfile",
        "RPM": "libsndfile-devel"
     }

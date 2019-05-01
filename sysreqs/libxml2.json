@@ -3,6 +3,7 @@
     "sysreqs": "libxml2",
     "platforms": {
        "DEB": "libxml2-dev",
+       "PKGBUILD": "libxml2",
        "OSX/brew": null,
        "RPM": "libxml2-devel"
     }

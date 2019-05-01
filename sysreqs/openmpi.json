@@ -6,6 +6,7 @@
         "runtime": "libopenmpi1.6",
         "buildtime": "libopenmpi-dev"
       },
+      "PKGBUILD": "openmpi",
       "OSX/brew": "openmpi",
       "RPM": {
         "runtime": "openmpi",

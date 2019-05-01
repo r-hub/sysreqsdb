@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": "libarchive-dev",
       "OSX/brew": "libarchive",
+      "PKGBUILD": "libarchive",
       "RPM": "libarchive-devel",
       "CSW": "libarchive_dev"
     }

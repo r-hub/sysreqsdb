@@ -3,6 +3,7 @@
     "sysreqs": "/SAGA GIS/",
     "platforms": {
       "DEB": "saga",
+      "PKGBUILD": "saga-gis",
       "OSX/brew": "saga-gis-lts"
     }
   }

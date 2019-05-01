@@ -3,6 +3,7 @@
 	"sysreqs": "netcdf",
 	"platforms": {
 	    "DEB": "libnetcdf-dev",
+        "PKGBUILD": "netcdf",
 	    "OSX/brew": "netcdf",
 	    "RPM": "netcdf-devel"
 	}

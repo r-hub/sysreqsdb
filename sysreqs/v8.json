@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": "libv8-dev",
       "OSX/brew": "v8",
+      "PKGBUILD": "v8",
       "RPM": "v8-314-devel"
     }
   }

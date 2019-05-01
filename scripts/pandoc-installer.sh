@@ -15,22 +15,26 @@ if uname > /dev/null && [ $(uname) == 'Darwin' ]; then
 elif uname > /dev/null && [ $(uname) == 'Linux' ] ;then
     >&2 echo "Linux detected"
     if [ -f /etc/debian_version ]; then
-	>&2 echo "DEB distro detected"
-	distro=debian
-	arch=$(uname -p)
+        >&2 echo "DEB distro detected"
+        distro=debian
+        arch=$(uname -p)
     elif [ -f /etc/redhat-release ]; then
-	>&2 echo "RPM distro detected"
-	distro=rpm
-	arch=$(uname -p)
+        >&2 echo "RPM distro detected"
+        distro=rpm
+        arch=$(uname -p)
+    elif [ -f "/etc/arch-release" ]; then
+        >&2 echo "PKGBUILD distro detected"
+        distro=arch
+        arch=$(uname -p)
     else
-	>&2 echo "Unknown distro, try DEB"
-	distro=debian
-	arch=$(uname -p)
+        >&2 echo "Unknown distro, try DEB"
+        distro=debian
+        arch=$(uname -p)
     fi
 
     # Some Docker images report unknown, try to use 64 bit then
     if [ "$arch" == "unknown" ]; then
-	arch="x86_64"
+        arch="x86_64"
     fi
 
     PANDOC="${URL}/linux/${distro}/${arch}/pandoc"

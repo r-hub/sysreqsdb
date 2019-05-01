@@ -3,6 +3,7 @@
 	"sysreqs": "/\\bPango\\b/i",
 	"platforms": {
 	    "DEB": "libpango1.0-dev",
+        "PKGBUILD": "pango",
 	    "OSX/brew": "pango",
 	    "RPM": "pango-devel"
 	}

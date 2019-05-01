@@ -6,6 +6,7 @@
         "runtime": "libxft2",
         "buildtime": "libxft-dev"
       },
+      "PKGBUILD": "libxft",
       "RPM": {
         "runtime": "libXft",
         "buildtime": "libXft-devel"

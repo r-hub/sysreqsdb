@@ -3,6 +3,7 @@
     "sysreqs": "mongodb",
     "platforms": {
        "DEB": "mongodb",
+       "PKGBUILD": "mongodb",
        "OSX/brew": "mongodb",
        "RPM": "mongodb-org"
     }

@@ -5,6 +5,7 @@
       "DEB": null,
       "OSX/brew": null,
       "RPM": null,
+      "PKGBUILD": null,
       "Windows": null
     },
     "comment": "We don't do anything special for C++-11"

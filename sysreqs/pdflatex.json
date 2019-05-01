@@ -3,6 +3,7 @@
     "sysreqs": "/(PDF)LaTeX/i",
     "platforms": {
       "DEB": "texlive-latex-base",
+      "PKGBUILD": "texlive-core",
       "OSX/brew": null,
       "RPM": "texlive-collection-basic"
     }

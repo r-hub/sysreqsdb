@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": "cargo",
       "RPM": "cargo",
+      "PKGBUILD": "rust",
       "OSX/brew": "rust"      
     }
   }

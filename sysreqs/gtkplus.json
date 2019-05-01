@@ -4,6 +4,7 @@
 	"platforms": {
 	    "DEB": "libgtk2.0-dev",
 	    "OSX/brew": "gtk+",
+        "PKGBUILD": "gtk2",
 	    "RPM": "gtk2-devel"
 	}
     }

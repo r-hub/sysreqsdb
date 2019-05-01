@@ -5,6 +5,7 @@
     "platforms": {
       "DEB": "libjq-dev",
       "RPM": "jq-devel",
+      "PKGBUILD": "jq",
       "OSX/brew": "jq"
     }
   }

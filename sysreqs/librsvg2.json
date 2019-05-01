@@ -3,6 +3,7 @@
     "sysreqs": "librsvg2",
     "platforms": {
       "DEB": "librsvg2-dev",
+      "PKGBUILD": "librsvg",
       "OSX/brew": "librsvg",
       "RPM": "librsvg2-devel"
     }

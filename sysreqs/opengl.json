@@ -3,6 +3,7 @@
     "sysreqs": "OpenGL",
     "platforms": {
       "DEB": "libgl1-mesa-dev",
+      "PKGBUILD": "mesa",
       "OSX/brew": null,
       "RPM": "mesa-libGL-devel"
     }

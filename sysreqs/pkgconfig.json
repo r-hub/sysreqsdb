@@ -3,7 +3,6 @@
     "sysreqs": "/pkg(:-|)config/",
     "platforms": {
       "DEB": "pkg-config",
-      "PKGBUILD": "",
       "OSX/brew": "pkg-config",
       "PKGBUILD": "pkgconf",
       "RPM": "pkgconfig"

@@ -1,11 +1,11 @@
 {
-    "atk": {
+  "atk": {
     "sysreqs": "/\\bATK\\b/",
     "platforms": {
-        "DEB": "libatk1.0-dev",
-        "OSX/brew": "atk",
-        "PKGBUILD": "atk",
-        "RPM": "atk-devel"
+      "DEB": "libatk1.0-dev",
+      "OSX/brew": "atk",
+      "PKGBUILD": "atk",
+      "RPM": "atk-devel"
     }
-    }
+  }
 }

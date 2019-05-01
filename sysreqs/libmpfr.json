@@ -1,11 +1,11 @@
 {
-    "libmpfr": {
+  "libmpfr": {
     "sysreqs": "mpfr",
     "platforms": {
-        "DEB": "libmpfr-dev",
-        "PKGBUILD": "mpfr",
-        "OSX/brew": "mpfr",
-        "RPM": "mpfr-devel"
+      "DEB": "libmpfr-dev",
+      "PKGBUILD": "mpfr",
+      "OSX/brew": "mpfr",
+      "RPM": "mpfr-devel"
     }
-    }
+  }
 }

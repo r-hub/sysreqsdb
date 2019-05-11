@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://github.com/r-hub/sysreqsdb/schema-platform.json",
+    "version": "2.0.0",
+    "title": "System Requirements Platforms",
+    "description": "Platforms for system requirement mapping for R packages",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+
+        "title": {
+            "type": "string"
+        },
+
+        "description": {
+            "type": "string"
+        },
+
+        "uri": {
+            "type": "string"
+        },
+
+        "os": {
+            "type": "string"
+        },
+
+        "distribution": {
+
+        },
+
+        "from-version": {
+            "type": "string"
+        },
+
+        "before-version": {
+            "type": "string"
+        }
+            
+    }
+
+    "required": [ "name",
+                  "title",
+                  "description",
+                  "os",
+                  "distribution",
+                  "versions",
+                  "install-command",
+                  "query-command" ]
+}

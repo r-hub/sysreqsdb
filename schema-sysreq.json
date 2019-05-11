@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://github.com/r-hub/sysreqsdb/schema.json",
+    "$id": "http://github.com/r-hub/sysreqsdb/schema-sysreq.json",
     "version": "2.0.0",
     "title": "System Requirement",
     "description": "System Requirement mapping for R packages",

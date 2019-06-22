@@ -3,6 +3,7 @@
     "sysreqs": "/QGIS/",
     "platforms": {
       "DEB": "qgis",
+      "PKGBUILD": "qgis",
       "OSX/brew": "qgis2"
     }
   }

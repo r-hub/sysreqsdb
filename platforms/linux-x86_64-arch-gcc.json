@@ -1,0 +1,7 @@
+{
+    "id": "linux-x86_64-arch-gcc",
+    "name": "PKGBUILD",
+    "distribution": "Arch",
+    "release": "2019.04.01",
+    "install-commands": "pacman -Syu && pacman -S --noconfirm ${sysreqs}"
+}

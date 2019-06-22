@@ -3,6 +3,7 @@
       "sysreqs": "/\\bODBC3?\\b/i",
       "platforms": {
         "DEB": "unixodbc-dev",
+        "PKGBUILD": "unixodbc",
         "OSX/brew": "unixodbc",
         "RPM": "unixODBC-devel"
       }

@@ -4,7 +4,8 @@
     "platforms": {
       "DEB": "dcraw",
       "RPM": "dcraw",
-      "OSX/brew": "dcraw"
+      "OSX/brew": "dcraw",
+       "PKGBUILD": "dcraw"
     }
   }
 }

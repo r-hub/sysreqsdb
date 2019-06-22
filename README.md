@@ -33,7 +33,10 @@ Distributions using `rpm` package format:
 * Fedora Linux (recent releases)
 * RedHat and CentOS Linux (recent releases)
 
-Non-native package formats;
+Distributions using the `PKGBUILD` package format:
+* Arch Linux
+
+Non-native package formats:
 * HomeBrew package manager on MacOS
 * Pacman/Rtools on Windows (forthcoming)
 

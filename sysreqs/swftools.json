@@ -3,6 +3,7 @@
     "sysreqs": "/SWF Tools/",
     "platforms": {
       "DEB": "swftools",
+      "PKGBUILD": "swftools",
       "OSX/brew": "swftools"
     }
   }

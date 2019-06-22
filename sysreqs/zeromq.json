@@ -4,7 +4,8 @@
     "platforms": {
       "DEB": "libzmq3-dev",
       "OSX/brew": "zeromq",
-      "RPM": "zeromq3-devel"
+      "PKGBUILD": "zeromq",
+      "RPM": "zeromq-devel"
     }
   }
 }

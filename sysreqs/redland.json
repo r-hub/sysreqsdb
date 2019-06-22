@@ -3,6 +3,7 @@
     "sysreqs": ["/redland/", "/librdf/"],
    "platforms": {
       "DEB": "librdf0-dev",
+      "PKGBUILD": "redland",
       "OSX/brew": "redland",
       "RPM": "redland-devel"
     }

@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": "libglu1-mesa-dev",
       "OSX/brew": null,
+      "PKGBUILD": "glu",
       "RPM": "mesa-libGLU-devel"
     }
   }

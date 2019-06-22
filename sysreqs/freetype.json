@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": "libfreetype6-dev",
       "OSX/brew": "freetype",
+      "PKGBUILD": "freetype2",
       "RPM": "freetype-devel"
     }
   }

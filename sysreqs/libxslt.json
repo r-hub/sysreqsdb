@@ -3,6 +3,7 @@
     "sysreqs": "libxslt",
     "platforms": {
        "DEB": "libxslt1-dev",
+       "PKGBUILD": "libxslt",
        "OSX/brew": "libxslt",
        "RPM": "libxslt-devel"
     }

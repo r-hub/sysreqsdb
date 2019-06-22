@@ -26,6 +26,7 @@
           "buildtime": "libgsl-dev"
         }
       ],
+      "PKGBUILD": "gsl",
       "OSX/brew": "gsl",
       "RPM": {
         "runtime": "gsl",

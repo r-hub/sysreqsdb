@@ -4,6 +4,7 @@
     "platforms": {
       "DEB": {"script": "protobuf-installer.sh"},
       "RPM": {"script": "protobuf-installer.sh"},
+      "PKGBUILD": "protobuf",
       "OSX/brew": "protobuf"
     }
   }  

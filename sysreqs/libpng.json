@@ -3,6 +3,7 @@
     "sysreqs": "/\\blibpng\\b/",
     "platforms": {
       "DEB": "libpng-dev",
+      "PKGBUILD": "libpng",
       "OSX/brew": "libpng",
       "RPM": "libpng-devel"
     }

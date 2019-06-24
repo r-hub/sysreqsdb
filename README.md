@@ -102,6 +102,8 @@ If you maintain a public platform/tool using sysreqsdb, make a PR to this repo u
 
 * The [`codemetar` package](https://github.com/ropensci/codemetar), R package for the [CodeMeta project](https://codemeta.github.io/), uses the sysreqs API to parse the SystemRequirements field.
 
+* The [`containerit` package](https://github.com/o2r-project/containerit) uses the sysreqs API to derive system requirements of packages for automatically creating a Dockerfile based on a collection of packages.
+
 ## License
 
 MIT © The R Consortium

@@ -1,0 +1,9 @@
+{
+  "openmp": {
+    "sysreqs": "OpenMP",
+    "platforms": {
+       "DEB": "libomp-dev",
+       "RPM": "libomp-devel"
+    }
+  }
+}

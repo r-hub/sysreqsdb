@@ -1,0 +1,11 @@
+{
+  "libzstd": {
+    "sysreqs": "/\\blibzstd\\b/",
+    "platforms": {
+      "DEB": "libzstd-dev",
+      "PKGBUILD": "libzstd",
+      "OSX/brew": "zstd",
+      "RPM": "libzstd-devel"
+    }
+  }
+}

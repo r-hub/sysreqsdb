@@ -1,0 +1,11 @@
+{
+  "librabbitmq": {
+    "sysreqs": "librabbitmq",
+    "platforms": {
+       "DEB": "librabbitmq-dev",
+       "PKGBUILD": "librabbitmq-c",
+       "OSX/brew": "rabbitmq-c",
+       "RPM": "librabbitmq-devel"
+    }
+  }
+}

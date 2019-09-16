@@ -2,7 +2,7 @@
   "java": {
     "sysreqs": [ "Java", "java" ],
     "platforms": {
-      "DEB": "openjdk-7-jre-headless",
+      "DEB": "default-jre-headless",
       "OSX/brew": null,
       "PKGBUILD": "jre-openjdk-headless",
       "RPM": "java-1.8.0-openjdk"

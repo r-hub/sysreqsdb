@@ -1,0 +1,11 @@
+{
+    "libglpk": {
+        "sysreqs": "/\\bglpk\\b/",
+        "platforms": {
+            "DEB": {
+                "runtime": "libglpk-dev",
+                "buildtime": "libglpk-dev"
+            }
+        }
+    }
+}

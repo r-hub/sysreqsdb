@@ -1,0 +1,11 @@
+{
+  "libgit2": {
+    "sysreqs": "/libgit2/i",
+    "platforms": {
+      "DEB": "libgit2-dev",
+      "RPM": "libgit2-devel",
+      "PKGBUILD": "libgit2",
+      "OSX/brew": "libgit2"
+    }
+  }
+}

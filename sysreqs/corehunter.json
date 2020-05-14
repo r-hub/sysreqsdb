@@ -2,9 +2,9 @@
   "corehunter": {
     "sysreqs": "JRE 8",
     "platforms": {
-      "DEB": "default-jre-headless",
-      "OSX/brew": null,
-      "PKGBUILD": "jre-openjdk-headless",
+      "DEB": "openjdk-8-jre",
+      "OSX/brew": "adoptopenjdk8",
+      "PKGBUILD": "jre8-openjdk-headless",
       "RPM": "java-1.8.0-openjdk"
     }
   }

@@ -1,6 +1,6 @@
 {
   "git": {
-    "sysreqs": "/\\bgit/\\b/i",
+    "sysreqs": "/\\bgit\\b/i",
     "platforms": {
       "DEB": "git-core",
       "RPM": "git",

@@ -21,10 +21,16 @@
           "buildtime": "libmysqlclient-dev"
         },
         {
-          "buildtime": "libmariadb-client-lgpl-dev",
+          "distribution": "Debian",
+          "releases": ["jessie"],
+          "runtime": "libmariadb-client-lgpl-dev"
+        },
+        {
+          "buildtime": "libmariadb-dev",
           "runtime": "libmariadb2"
         }
       ],
+      "RPM": "mariadb-devel",
       "PKGBUILD": "mariadb-clients",
       "OSX/brew": "mariadb-connector-c"
     }

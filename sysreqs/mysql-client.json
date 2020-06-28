@@ -15,6 +15,12 @@
           "buildtime": "libmysqlclient-dev"
         },
         {
+          "distribution": "Ubuntu",
+          "releases": ["xenial"],
+          "runtime": "libmariadb2",
+          "buildtime": "libmariadb-client-lgpl-dev"
+        },
+        {
           "distribution": "Debian",
           "releases": ["squeeze", "wheezy"],
           "runtime": "libmysqlclient18",
@@ -23,7 +29,8 @@
         {
           "distribution": "Debian",
           "releases": ["jessie"],
-          "runtime": "libmariadb-client-lgpl-dev"
+          "runtime": "libmariadb2",
+          "buildtime": "libmariadb-client-lgpl-dev"
         },
         {
           "buildtime": "libmariadb-dev",

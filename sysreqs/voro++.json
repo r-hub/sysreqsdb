@@ -1,0 +1,11 @@
+{
+  "voro++": {
+    "sysreqs": "voro++",
+    "platforms": {
+      "DEB": "voro++",
+      "OSX/brew": "voro++",
+      "PKGBUILD": "voro++",
+      "RPM": "voro++"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "harfbuzz": {
+    "sysreqs": "/\\bharfbuzz\\b/",
+    "platforms": {
+      "DEB": "libharfbuzz-dev",
+      "OSX/brew": "harfbuzz",
+      "PKGBUILD": "harfbuzz",
+      "RPM": "harfbuzz-devel"
+    }
+  }
+}

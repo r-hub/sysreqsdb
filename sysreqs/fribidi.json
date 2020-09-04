@@ -1,0 +1,10 @@
+{
+    "fribidi": {
+    "sysreqs": "/\\bfribidi\\b/",
+    "platforms": {
+      "DEB": "libfribidi-dev",
+      "OSX/brew": "fribidi",
+      "RPM": "fribidi-devel"
+    }
+  }
+}

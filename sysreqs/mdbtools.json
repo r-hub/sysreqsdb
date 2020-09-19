@@ -5,7 +5,7 @@
        "DEB": "mdbtools",
        "OSX/brew": "mdbtools",
        "RPM": "mdbtools",
-       "Windows": "https://github.com/mdbtools/mdbtools/archive/0.7.1.tar.gz
+       "Windows": "https://github.com/mdbtools/mdbtools/archive/0.7.1.tar.gz"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "mdbtools": {
-    "sysreqs": "libxml2",
+    "sysreqs": "mdbtools",
     "platforms": {
        "DEB": "mdbtools",
        "OSX/brew": "mdbtools",

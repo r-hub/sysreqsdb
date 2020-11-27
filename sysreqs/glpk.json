@@ -5,7 +5,11 @@
             "DEB": {
                 "runtime": "libglpk-dev",
                 "buildtime": "libglpk-dev"
-            }
+            },
+            "RPM": {
+                "runtime": "glpk-devel",
+                "buildtime": "glpk-devel"
+	    }
         }
     }
 }

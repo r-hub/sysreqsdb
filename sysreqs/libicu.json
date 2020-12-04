@@ -1,0 +1,11 @@
+{
+  "libicu": {
+    "sysreqs": "/icu4c/i",
+    "platforms": {
+      "DEB": "libicu-dev",
+      "RPM": "libicu-devel",
+      "PKGBUILD": "icu",
+      "OSX/brew": "icu4c"
+    }
+  }
+}

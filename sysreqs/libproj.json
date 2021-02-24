@@ -5,7 +5,7 @@
       "DEB": "libproj-dev",
       "PKGBUILD": "proj",
       "OSX/brew": "proj",
-      "RPM": "proj-devel proj-epsg proj-nad"
+      "RPM": "proj-devel proj"
     }
   }
 }

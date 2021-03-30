@@ -2,7 +2,7 @@
   "udunits": {
     "sysreqs": "/(?:[^-])\\budunits\\b(?![-_.])/",
     "platforms": {
-       "DEB": "udunits",
+       "DEB": "libudunits2-dev",
        "OSX/brew": "udunits",
        "PKGBUILD": "udunits",
        "RPM": "udunits"

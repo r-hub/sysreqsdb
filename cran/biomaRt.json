@@ -1,0 +1,3 @@
+{
+  "biomaRt": ["libxml2", "openssl", "libcurl"]
+}

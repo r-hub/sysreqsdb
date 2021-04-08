@@ -1,6 +1,6 @@
 {
   "libproj": {
-    "sysreqs": ["PROJ.4", "proj.maptools.org"],
+    "sysreqs": ["PROJ", "proj.maptools.org"],
     "platforms": {
       "DEB": "libproj-dev",
       "PKGBUILD": "proj",

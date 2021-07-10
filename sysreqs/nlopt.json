@@ -1,0 +1,10 @@
+{
+  "nlopt": {
+    "sysreqs": "nlopt",
+    "platforms": {
+      "DEB": "libnlopt-dev",
+      "OSX/brew": "nlopt",
+      "RPM": "NLopt-devel"
+    }
+  }
+}

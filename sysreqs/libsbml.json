@@ -1,0 +1,13 @@
+{
+  "libsbml": {
+    "sysreqs": "libsbml",
+    "platforms": {
+      "DEB": {
+        "runtime": "libsbml5",
+        "buildtime": "libsbml5-dev"
+      },
+      "RPM": "libsbml-devel",
+      "PKGBUILD": "libsbml"
+    }
+  }
+}

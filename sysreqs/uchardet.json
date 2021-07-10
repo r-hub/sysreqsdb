@@ -1,0 +1,19 @@
+{
+  "uchardet": {
+    "sysreqs": "uchardet",
+    "platforms": {
+      "DEB": "libuchardet-dev",
+      "RPM": "uchardet-devel",
+      "OSX/brew": "uchardet",
+      "PKGBUILD": "uchardet",
+      "Windows": {
+        "32bit": [
+          "mingw-w64-i686-uchardet"
+        ],
+        "64bit": [
+          "mingw-w64-x86_64-uchardet"
+        ]
+      }
+    }
+  }
+}

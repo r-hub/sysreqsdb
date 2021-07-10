@@ -1,0 +1,11 @@
+{
+  "libjpeg": {
+    "sysreqs": "/\\blibjpeg\\b/",
+    "platforms": {
+      "DEB": "libjpeg-dev",
+      "PKGBUILD": "libjpeg",
+      "OSX/brew": "libjpeg",
+      "RPM": "libjpeg-devel"
+    }
+  }
+}

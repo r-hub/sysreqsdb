@@ -1,5 +1,5 @@
 {
-  "fftw": {
+  "suitesparse": {
     "sysreqs": "suitesparse",
     "platforms": {
       "DEB": "libsuitesparse-dev",

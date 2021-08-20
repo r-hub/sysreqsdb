@@ -1,0 +1,10 @@
+{
+  "fftw": {
+    "sysreqs": "suitesparse",
+    "platforms": {
+      "DEB": "libsuitesparse-dev",
+      "OSX/brew": "suite-sparse",
+      "RPM": "suitesparse-devel"
+    }
+  }
+}

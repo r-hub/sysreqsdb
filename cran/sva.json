@@ -1,3 +1,3 @@
 {
-    "sva": [ "openssl" ]
+    "sva": [ "openssl", "libxml2" ]
 }

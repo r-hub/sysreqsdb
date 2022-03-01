@@ -1,0 +1,11 @@
+{
+  "librrd": {
+    "sysreqs": "librrd",
+    "platforms": {
+       "DEB": "librrd-dev",
+       "OSX/brew": "rrdtool",
+       "RPM": "rrdtool-devel",
+       "CSW": "rrdtool"
+    }
+  }
+}

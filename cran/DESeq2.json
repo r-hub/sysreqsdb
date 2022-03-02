@@ -1,3 +1,3 @@
 {
-    "DESeq2": [ "openssl", "libxml2" ]
+    "DESeq2": [ "openssl" ]
 }

@@ -1,3 +1,3 @@
 {
-    "mkin": "cmake, gmp"
+    "mkin": "cmake, gmp, mpfr"
 }

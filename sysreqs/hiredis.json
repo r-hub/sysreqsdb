@@ -5,7 +5,7 @@
             "DEB": "libhiredis-dev",
             "OSX/brew": "hiredis",
             "PKGBUILD": "hiredis",
-            "RPM": "libhiredis-devel"
+            "RPM": "hiredis-devel"
         }
     }
 }

@@ -1,0 +1,11 @@
+{
+  "osmium-tool": {
+    "sysreqs": "osmium-tool",
+    "platforms": {
+      "DEB": "osmium-tool",
+      "PKGBUILD": "osmium-tool",
+      "RPM": "osmium-tool",
+      "OSX/brew": "osmium-tool"
+    }
+  }
+}

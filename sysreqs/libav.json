@@ -2,7 +2,7 @@
   "libav": {
     "sysreqs": "libav",
     "platforms": {
-       "DEB": "libav-tools",
+       "DEB": "ffmpeg",
        "OSX/brew": "libav",
        "PKGBUILD": "gst-libav",
        "RPM": null

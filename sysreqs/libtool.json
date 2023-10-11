@@ -1,0 +1,11 @@
+{
+  "libtool": {
+    "sysreqs": "libtool",
+    "platforms": {
+      "DEB": "libtool",
+      "RPM": "libtool",
+      "OSX/brew": "libtool",
+      "PKGBUILD": "libtool"
+    }
+  }
+}

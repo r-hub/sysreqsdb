@@ -6,6 +6,7 @@
         "runtime": "libpq5",
         "buildtime": "libpq-dev"
       },
+      "RPM": "postgresql-server-devel",
       "PKGBUILD": "libpqxx",
       "OSX/brew": "libpq"
     }

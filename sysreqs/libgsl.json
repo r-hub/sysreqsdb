@@ -15,6 +15,18 @@
           "buildtime": "libgsl-dev"
         },
         {
+          "distribution": "Ubuntu",
+          "releases": ["bionic", "focal"],
+          "runtime": "libgsl23",
+          "buildtime": "libgsl-dev"
+        },        
+        {
+          "distribution": "Ubuntu",
+          "releases": ["jammy"],
+          "runtime": "libgsl27",
+          "buildtime": "libgsl-dev"
+        },
+        {
           "distribution": "Debian",
           "releases": ["squeeze", "wheezy", "jessie"],
           "runtime": "libgsl0ldbl",

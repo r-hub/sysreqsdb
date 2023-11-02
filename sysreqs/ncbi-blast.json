@@ -1,0 +1,10 @@
+{
+  "ncbi-blast+": {
+    "sysreqs": "ncbi-blast+",
+    "platforms": {
+      "DEB": "ncbi-blast+",
+      "RPM": "ncbi-blast+",
+      "OSX/brew": "blast"
+    }
+  }
+}

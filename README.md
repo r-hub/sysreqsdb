@@ -3,6 +3,10 @@
 
 > SystemRequirements for R packages
 
+## Superseded!
+
+This project is replaced by a new database [rstudio/r-system-requirements](https://github.com/rstudio/r-system-requirements), which is used by `pak` and `rhub2`.  
+
 ## Introduction
 
 Many R packages require system libraries or other external software to build

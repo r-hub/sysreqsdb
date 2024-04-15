@@ -1,4 +1,6 @@
 
+## This repository is now archived in favor of https://github.com/rstudio/r-system-requirements
+
 # sysreqs
 
 > SystemRequirements for R packages

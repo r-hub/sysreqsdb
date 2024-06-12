@@ -1,0 +1,11 @@
+{
+  "xz": {
+    "sysreqs": "/\\bxz\\b/",
+    "platforms": {
+      "DEB": "liblzma-dev",
+      "PKGBUILD": "liblzma",
+      "OSX/brew": "xz",
+      "RPM": "xz-devel"
+    }
+  }
+}

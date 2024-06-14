@@ -1,0 +1,8 @@
+{
+  "infernal": {
+    "sysreqs": "infernal",
+    "platforms": {
+        "DEB": "infernal"
+    }
+  }
+}

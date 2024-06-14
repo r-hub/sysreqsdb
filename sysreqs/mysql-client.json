@@ -21,6 +21,12 @@
           "buildtime": "libmysqlclient-dev"
         },
         {
+          "distribution": "Ubuntu",
+          "releases": ["bionic", "focal", "jammy"],
+          "runtime": "libmariadb3",
+          "buildtime": "libmysqlclient-dev"
+        },
+        {
           "distribution": "Debian",
           "releases": ["squeeze", "wheezy"],
           "runtime": "libmysqlclient18",
